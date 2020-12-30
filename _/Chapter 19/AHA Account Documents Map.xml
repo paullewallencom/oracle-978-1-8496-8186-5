@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?><?Siebel-Property-Set EscapeNames="true"?><SiebelMessage
+><__und_undPROPERTIES_und_und
+><TargetServerPath
+></TargetServerPath
+><SourceServiceMethod
+></SourceServiceMethod
+><SchemaVersion
+>45.19.0.23</SchemaVersion
+><SRFVersion
+>43|1224322639|1291661018</SRFVersion
+><SessionId
+>8SIA-7Z443</SessionId
+><AcknowledgementWorkflow
+>UDA Acknowledgement</AcknowledgementWorkflow
+><PostProcessWorkflow
+>Testing</PostProcessWorkflow
+><Asynchronous
+>Y</Asynchronous
+><TransactionLogFileName
+>8SIA-7Z443</TransactionLogFileName
+><TransactionName
+>EAI Data Map</TransactionName
+><AsyncExportFile
+>N</AsyncExportFile
+><UserName
+></UserName
+><Password
+></Password
+><TargetServiceName
+></TargetServiceName
+><AsyncDataPrep
+>Y</AsyncDataPrep
+><TargetWorkflow
+>UDA Target Workflow</TargetWorkflow
+><EAIQueueType
+>On Error</EAIQueueType
+><TargetServiceMethod
+></TargetServiceMethod
+><SourceServiceName
+></SourceServiceName
+><TargetSubsystem
+>UDADeploy</TargetSubsystem
+><Description
+></Description
+><SessionProjectName
+>AHA EAI Data Maps</SessionProjectName
+><ExportFilePath
+>C:\</ExportFilePath
+><TransactionLogFilePath
+>C:\SIA81\CLIENT\temp\8SIA-7Z443.log</TransactionLogFilePath
+><TransactionId
+>8SIA-7Z444</TransactionId
+></__und_undPROPERTIES_und_und
+><EAIMessage
+><__und_undPROPERTIES_und_und
+><SessionItemName
+>EAI Data Map</SessionItemName
+><SessionName
+>EMT Session</SessionName
+><DataTypeName
+>EAI Data Map</DataTypeName
+><MessageId
+></MessageId
+><GroupName
+>EAI Data Map</GroupName
+><MessageType
+>Integration Object</MessageType
+><IntObjectName
+>EAI Data Map</IntObjectName
+><IntObjectFormat
+>Siebel Hierarchical</IntObjectFormat
+><EAIMethod
+>Upsert</EAIMethod
+></__und_undPROPERTIES_und_und
+><ListOfEAI_spcData_spcMap
+><EAI_spcObject_spcMap
+><__und_undPROPERTIES_und_und
+><Comments
+>Created for AHA prototype</Comments
+><Source_spcObject_spcName
+>AHA Account Documents Source IO</Source_spcObject_spcName
+><Name
+>AHA Account Documents Map</Name
+><Destination_spcObject_spcName
+>AHA Customer Documents Target IO</Destination_spcObject_spcName
+></__und_undPROPERTIES_und_und
+><ListOfEAI_spcMap_spcArgument
+></ListOfEAI_spcMap_spcArgument
+><ListOfEAI_spcComponent_spcMap
+><EAI_spcComponent_spcMap
+><__und_undPROPERTIES_und_und
+><Comments
+></Comments
+><Destination_spcComponent_spcName
+>Account</Destination_spcComponent_spcName
+><Parent_spcComponent_spcMap_spcName
+></Parent_spcComponent_spcMap_spcName
+><Source_spcComponent_spcName
+>Account</Source_spcComponent_spcName
+><Destination_spcValidation
+></Destination_spcValidation
+><Source_spcSearch_spcSpecification
+></Source_spcSearch_spcSpecification
+><Source_spcValidation
+></Source_spcValidation
+><Name
+>Account</Name
+></__und_undPROPERTIES_und_und
+><ListOfEAI_spcField_spcMap
+><EAI_spcField_spcMap
+><__und_undPROPERTIES_und_und
+><Comments
+></Comments
+><Destination_spcField_spcName
+>Integration Id</Destination_spcField_spcName
+><Source_spcField_spcExpression
+>[Integration Id]</Source_spcField_spcExpression
+></__und_undPROPERTIES_und_und
+></EAI_spcField_spcMap
+><EAI_spcField_spcMap
+><__und_undPROPERTIES_und_und
+><Comments
+></Comments
+><Destination_spcField_spcName
+>Name</Destination_spcField_spcName
+><Source_spcField_spcExpression
+>[Name]</Source_spcField_spcExpression
+></__und_undPROPERTIES_und_und
+></EAI_spcField_spcMap
+><EAI_spcField_spcMap
+><__und_undPROPERTIES_und_und
+><Comments
+></Comments
+><Destination_spcField_spcName
+>Location</Destination_spcField_spcName
+><Source_spcField_spcExpression
+>[Location]</Source_spcField_spcExpression
+></__und_undPROPERTIES_und_und
+></EAI_spcField_spcMap
+><EAI_spcField_spcMap
+><__und_undPROPERTIES_und_und
+><Comments
+></Comments
+><Destination_spcField_spcName
+>Primary Organization</Destination_spcField_spcName
+><Source_spcField_spcExpression
+>[Primary Organization]</Source_spcField_spcExpression
+></__und_undPROPERTIES_und_und
+></EAI_spcField_spcMap
+></ListOfEAI_spcField_spcMap
+></EAI_spcComponent_spcMap
+><EAI_spcComponent_spcMap
+><__und_undPROPERTIES_und_und
+><Comments
+></Comments
+><Destination_spcComponent_spcName
+>AHA Customer Documents</Destination_spcComponent_spcName
+><Parent_spcComponent_spcMap_spcName
+></Parent_spcComponent_spcMap_spcName
+><Source_spcComponent_spcName
+>Quote</Source_spcComponent_spcName
+><Destination_spcValidation
+></Destination_spcValidation
+><Source_spcSearch_spcSpecification
+></Source_spcSearch_spcSpecification
+><Source_spcValidation
+></Source_spcValidation
+><Name
+>Quote</Name
+></__und_undPROPERTIES_und_und
+><ListOfEAI_spcField_spcMap
+><EAI_spcField_spcMap
+><__und_undPROPERTIES_und_und
+><Comments
+></Comments
+><Destination_spcField_spcName
+>Document Type</Destination_spcField_spcName
+><Source_spcField_spcExpression
+>&quot;Quote&quot;</Source_spcField_spcExpression
+></__und_undPROPERTIES_und_und
+></EAI_spcField_spcMap
+><EAI_spcField_spcMap
+><__und_undPROPERTIES_und_und
+><Comments
+></Comments
+><Destination_spcField_spcName
+>Document Id</Destination_spcField_spcName
+><Source_spcField_spcExpression
+>[Id]</Source_spcField_spcExpression
+></__und_undPROPERTIES_und_und
+></EAI_spcField_spcMap
+><EAI_spcField_spcMap
+><__und_undPROPERTIES_und_und
+><Comments
+></Comments
+><Destination_spcField_spcName
+>Document Status</Destination_spcField_spcName
+><Source_spcField_spcExpression
+>[Status]</Source_spcField_spcExpression
+></__und_undPROPERTIES_und_und
+></EAI_spcField_spcMap
+><EAI_spcField_spcMap
+><__und_undPROPERTIES_und_und
+><Comments
+></Comments
+><Destination_spcField_spcName
+>Responsible User Id</Destination_spcField_spcName
+><Source_spcField_spcExpression
+>[Updated By]</Source_spcField_spcExpression
+></__und_undPROPERTIES_und_und
+></EAI_spcField_spcMap
+><EAI_spcField_spcMap
+><__und_undPROPERTIES_und_und
+><Comments
+></Comments
+><Destination_spcField_spcName
+>Verified Flag</Destination_spcField_spcName
+><Source_spcField_spcExpression
+>&quot;N&quot;</Source_spcField_spcExpression
+></__und_undPROPERTIES_und_und
+></EAI_spcField_spcMap
+></ListOfEAI_spcField_spcMap
+></EAI_spcComponent_spcMap
+><EAI_spcComponent_spcMap
+><__und_undPROPERTIES_und_und
+><Comments
+></Comments
+><Destination_spcComponent_spcName
+>AHA Customer Documents</Destination_spcComponent_spcName
+><Parent_spcComponent_spcMap_spcName
+></Parent_spcComponent_spcMap_spcName
+><Source_spcComponent_spcName
+>Opportunity</Source_spcComponent_spcName
+><Destination_spcValidation
+></Destination_spcValidation
+><Source_spcSearch_spcSpecification
+></Source_spcSearch_spcSpecification
+><Source_spcValidation
+></Source_spcValidation
+><Name
+>Opportunity</Name
+></__und_undPROPERTIES_und_und
+><ListOfEAI_spcField_spcMap
+><EAI_spcField_spcMap
+><__und_undPROPERTIES_und_und
+><Comments
+></Comments
+><Destination_spcField_spcName
+>Document Id</Destination_spcField_spcName
+><Source_spcField_spcExpression
+>[Id]</Source_spcField_spcExpression
+></__und_undPROPERTIES_und_und
+></EAI_spcField_spcMap
+><EAI_spcField_spcMap
+><__und_undPROPERTIES_und_und
+><Comments
+></Comments
+><Destination_spcField_spcName
+>Document Status</Destination_spcField_spcName
+><Source_spcField_spcExpression
+>[Sales Stage]</Source_spcField_spcExpression
+></__und_undPROPERTIES_und_und
+></EAI_spcField_spcMap
+><EAI_spcField_spcMap
+><__und_undPROPERTIES_und_und
+><Comments
+></Comments
+><Destination_spcField_spcName
+>Document Type</Destination_spcField_spcName
+><Source_spcField_spcExpression
+>&quot;Opportunity&quot;</Source_spcField_spcExpression
+></__und_undPROPERTIES_und_und
+></EAI_spcField_spcMap
+><EAI_spcField_spcMap
+><__und_undPROPERTIES_und_und
+><Comments
+></Comments
+><Destination_spcField_spcName
+>Responsible User Id</Destination_spcField_spcName
+><Source_spcField_spcExpression
+>[Updated By]</Source_spcField_spcExpression
+></__und_undPROPERTIES_und_und
+></EAI_spcField_spcMap
+><EAI_spcField_spcMap
+><__und_undPROPERTIES_und_und
+><Comments
+></Comments
+><Destination_spcField_spcName
+>Verified Flag</Destination_spcField_spcName
+><Source_spcField_spcExpression
+>&quot;N&quot;</Source_spcField_spcExpression
+></__und_undPROPERTIES_und_und
+></EAI_spcField_spcMap
+></ListOfEAI_spcField_spcMap
+></EAI_spcComponent_spcMap
+><EAI_spcComponent_spcMap
+><__und_undPROPERTIES_und_und
+><Comments
+></Comments
+><Destination_spcComponent_spcName
+>AHA Customer Documents</Destination_spcComponent_spcName
+><Parent_spcComponent_spcMap_spcName
+></Parent_spcComponent_spcMap_spcName
+><Source_spcComponent_spcName
+>Order Entry - Orders</Source_spcComponent_spcName
+><Destination_spcValidation
+></Destination_spcValidation
+><Source_spcSearch_spcSpecification
+></Source_spcSearch_spcSpecification
+><Source_spcValidation
+></Source_spcValidation
+><Name
+>Order</Name
+></__und_undPROPERTIES_und_und
+><ListOfEAI_spcField_spcMap
+><EAI_spcField_spcMap
+><__und_undPROPERTIES_und_und
+><Comments
+></Comments
+><Destination_spcField_spcName
+>Document Status</Destination_spcField_spcName
+><Source_spcField_spcExpression
+>[Status]</Source_spcField_spcExpression
+></__und_undPROPERTIES_und_und
+></EAI_spcField_spcMap
+><EAI_spcField_spcMap
+><__und_undPROPERTIES_und_und
+><Comments
+></Comments
+><Destination_spcField_spcName
+>Responsible User Id</Destination_spcField_spcName
+><Source_spcField_spcExpression
+>[Updated By]</Source_spcField_spcExpression
+></__und_undPROPERTIES_und_und
+></EAI_spcField_spcMap
+><EAI_spcField_spcMap
+><__und_undPROPERTIES_und_und
+><Comments
+></Comments
+><Destination_spcField_spcName
+>Document Id</Destination_spcField_spcName
+><Source_spcField_spcExpression
+>[Id]</Source_spcField_spcExpression
+></__und_undPROPERTIES_und_und
+></EAI_spcField_spcMap
+><EAI_spcField_spcMap
+><__und_undPROPERTIES_und_und
+><Comments
+></Comments
+><Destination_spcField_spcName
+>Document Type</Destination_spcField_spcName
+><Source_spcField_spcExpression
+>[Order Type]</Source_spcField_spcExpression
+></__und_undPROPERTIES_und_und
+></EAI_spcField_spcMap
+><EAI_spcField_spcMap
+><__und_undPROPERTIES_und_und
+><Comments
+></Comments
+><Destination_spcField_spcName
+>Verified Flag</Destination_spcField_spcName
+><Source_spcField_spcExpression
+>&quot;N&quot;</Source_spcField_spcExpression
+></__und_undPROPERTIES_und_und
+></EAI_spcField_spcMap
+></ListOfEAI_spcField_spcMap
+></EAI_spcComponent_spcMap
+><EAI_spcComponent_spcMap
+><__und_undPROPERTIES_und_und
+><Comments
+></Comments
+><Destination_spcComponent_spcName
+>AHA Customer Documents</Destination_spcComponent_spcName
+><Parent_spcComponent_spcMap_spcName
+></Parent_spcComponent_spcMap_spcName
+><Source_spcComponent_spcName
+>Response</Source_spcComponent_spcName
+><Destination_spcValidation
+></Destination_spcValidation
+><Source_spcSearch_spcSpecification
+></Source_spcSearch_spcSpecification
+><Source_spcValidation
+></Source_spcValidation
+><Name
+>Response</Name
+></__und_undPROPERTIES_und_und
+><ListOfEAI_spcField_spcMap
+><EAI_spcField_spcMap
+><__und_undPROPERTIES_und_und
+><Comments
+></Comments
+><Destination_spcField_spcName
+>Document Id</Destination_spcField_spcName
+><Source_spcField_spcExpression
+>[Id]</Source_spcField_spcExpression
+></__und_undPROPERTIES_und_und
+></EAI_spcField_spcMap
+><EAI_spcField_spcMap
+><__und_undPROPERTIES_und_und
+><Comments
+></Comments
+><Destination_spcField_spcName
+>Document Type</Destination_spcField_spcName
+><Source_spcField_spcExpression
+>&quot;Response&quot;</Source_spcField_spcExpression
+></__und_undPROPERTIES_und_und
+></EAI_spcField_spcMap
+><EAI_spcField_spcMap
+><__und_undPROPERTIES_und_und
+><Comments
+></Comments
+><Destination_spcField_spcName
+>Verified Flag</Destination_spcField_spcName
+><Source_spcField_spcExpression
+>&quot;N&quot;</Source_spcField_spcExpression
+></__und_undPROPERTIES_und_und
+></EAI_spcField_spcMap
+><EAI_spcField_spcMap
+><__und_undPROPERTIES_und_und
+><Comments
+></Comments
+><Destination_spcField_spcName
+>Document Status</Destination_spcField_spcName
+><Source_spcField_spcExpression
+>[Status]</Source_spcField_spcExpression
+></__und_undPROPERTIES_und_und
+></EAI_spcField_spcMap
+><EAI_spcField_spcMap
+><__und_undPROPERTIES_und_und
+><Comments
+></Comments
+><Destination_spcField_spcName
+>Responsible User Id</Destination_spcField_spcName
+><Source_spcField_spcExpression
+>[Updated By]</Source_spcField_spcExpression
+></__und_undPROPERTIES_und_und
+></EAI_spcField_spcMap
+></ListOfEAI_spcField_spcMap
+></EAI_spcComponent_spcMap
+></ListOfEAI_spcComponent_spcMap
+></EAI_spcObject_spcMap
+></ListOfEAI_spcData_spcMap
+></EAIMessage
+></SiebelMessage
+>

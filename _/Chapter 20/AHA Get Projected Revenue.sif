@@ -1,0 +1,637 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<REPOSITORY
+   NAME="Siebel Repository"
+   UPDATED="10/17/2008 10:12:45"
+   UPDATED_BY="SADMIN"
+   CREATED="10/17/2008 09:26:09"
+   CREATED_BY="SADMIN"
+   FIO_PLACEHOLDER_FIO="TRUE">
+	<PROJECT
+	   ALLOW_OBJECT_LOCKING="Y"
+	   COMMENTS="Bulk Request objects: BusObj/BusComp/BusService/IO"
+	   INACTIVE="N"
+	   LANGUAGE_LOCKED="ENU"
+	   LOCKED="Y"
+	   LOCKED_DATE="08/07/2010 12:15:13"
+	   NAME="ABO Bulk Request"
+	   UI_FREEZE="N"
+	   LOCKED_BY_NAME="SADMIN"
+	   UPDATED="12/10/2010 19:46:52"
+	   UPDATED_BY="SADMIN"
+	   CREATED="05/16/2007 05:17:11"
+	   CREATED_BY="SADMIN"
+	   FIO_PLACEHOLDER_FIO="TRUE">
+		<WORKFLOW_PROCESS
+		   BUSINESS_OBJECT="Account"
+		   EDIT="Y"
+		   INACTIVE="N"
+		   NAME="AHA Get Projected Revenue: 0"
+		   OBJECT_LOCKED="N"
+		   PASS_BY_REF_HIERARCHY_ARGUMENT="N"
+		   PROCESS_NAME="AHA Get Projected Revenue"
+		   REPLICATION_LEVEL="None"
+		   RUNNABLE="N"
+		   STATE_MANAGEMENT_TYPE="STATEFUL"
+		   STATUS="IN_PROGRESS"
+		   VERSION="0"
+		   WEB_SERVICE_ENABLED="N"
+		   WORKFLOW_MODE="Service Flow"
+		   UPDATED="12/10/2010 19:46:52"
+		   UPDATED_BY="SADMIN"
+		   CREATED="10/19/2010 11:03:10"
+		   CREATED_BY="SADMIN">
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   INOUT="INOUT"
+			   NAME="AHA Currency Code"
+			   UPDATED="10/19/2010 14:53:48"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/19/2010 14:53:48"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="NUMBER"
+			   DEFAULT_NUMBER="0"
+			   INOUT="INOUT"
+			   NAME="AHA Current Revenue"
+			   UPDATED="10/19/2010 11:27:40"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/19/2010 11:27:40"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   DEFAULT_STRING="false"
+			   INOUT="INOUT"
+			   NAME="AHA Last Record"
+			   UPDATED="10/19/2010 11:25:13"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/19/2010 11:25:13"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="NUMBER"
+			   DEFAULT_NUMBER="0"
+			   INOUT="INOUT"
+			   NAME="AHA Minimum Expected Value"
+			   UPDATED="10/19/2010 11:16:54"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/19/2010 11:15:48"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="NUMBER"
+			   DEFAULT_NUMBER="30"
+			   INOUT="INOUT"
+			   NAME="AHA Number Of Days"
+			   UPDATED="10/19/2010 11:16:18"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/19/2010 11:16:18"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="NUMBER"
+			   DEFAULT_NUMBER="0"
+			   INOUT="INOUT"
+			   NAME="AHA Record Count"
+			   UPDATED="10/19/2010 11:23:35"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/19/2010 11:23:35"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="NUMBER"
+			   DEFAULT_NUMBER="0"
+			   INOUT="INOUT"
+			   NAME="AHA Total Expected Revenue"
+			   UPDATED="10/19/2010 11:22:42"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/19/2010 11:22:24"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   INOUT="INOUT"
+			   NAME="Error Code"
+			   UPDATED="10/19/2010 11:03:10"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/19/2010 11:03:10"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   INOUT="INOUT"
+			   NAME="Error Message"
+			   UPDATED="10/19/2010 11:03:10"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/19/2010 11:03:10"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   DEFAULT_STRING="3SIA-2Y627"
+			   INOUT="INOUT"
+			   NAME="Object Id"
+			   UPDATED="10/19/2010 14:53:38"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/19/2010 11:03:10"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   INOUT="INOUT"
+			   NAME="Process Instance Id"
+			   UPDATED="10/19/2010 11:03:10"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/19/2010 11:03:10"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   INOUT="INOUT"
+			   NAME="Siebel Operation Object Id"
+			   UPDATED="10/19/2010 11:03:10"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/19/2010 11:03:10"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_STEP
+			   ALLOW_RETRY_FLAG="N"
+			   BUSINESS_COMPONENT="Opportunity"
+			   EDIT="Y"
+			   EVALUATE_ALL="Y"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r13*624 36 720 849*FillBgClr8*134218238*ArrowEnd1*1"
+			   NAME="Go to next Oppty"
+			   OPERATION="NEXT_RECORD"
+			   TYPE="SIEBEL_OPER"
+			   UPDATED="10/19/2010 12:57:20"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/19/2010 11:03:58"
+			   CREATED_BY="SADMIN">
+				<WF_STEP_BRANCH
+				   EDIT="Y"
+				   EVENT_CANCEL_FLAG="N"
+				   EVENT_VISIBILITY="Enterprise"
+				   INACTIVE="N"
+				   LAYOUT="@0*0*9*0*0*0*9*LineWidth1*22*P26*432 184*FrHS1*12*P16*672 184*NPts1*42*P06*672 362*P36*432 364*ToHS1*18*ArrowEnd1*4"
+				   NAME="Connector 6"
+				   TO_STEP_NAME="Last Record?"
+				   TYPE="CONNECTOR"
+				   USER_EVENT_TIMEOUT="0"
+				   UPDATED="10/19/2010 12:57:20"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/19/2010 12:55:28"
+				   CREATED_BY="SADMIN">
+					<WF_BRANCH_CONNECTOR
+					   FROM_STEP_NAME="Go to next Oppty"
+					   INACTIVE="N"
+					   LAYOUT="@0*0*9*0*0*0*9*LineWidth1*22*P26*432 184*FrHS1*12*P16*672 184*NPts1*42*P06*672 362*P36*432 364*ToHS1*18*ArrowEnd1*4"
+					   NAME="Connector 6"
+					   TO_STEP_NAME="Last Record?"
+					   UPDATED="10/19/2010 12:57:20"
+					   UPDATED_BY="SADMIN"
+					   CREATED="10/19/2010 12:55:28"
+					   CREATED_BY="SADMIN">
+					</WF_BRANCH_CONNECTOR>
+				</WF_STEP_BRANCH>
+				<WF_STEP_I_O_ARGUMENT
+				   BUSINESS_COMPONENT="Opportunity"
+				   BUSINESS_COMPONENT_FIELD="Primary Revenue Expected Value"
+				   INACTIVE="N"
+				   INPUT_FLAG="O"
+				   NAME="O:Go to next Oppty40"
+				   PROPERTY_NAME="AHA Current Revenue"
+				   SEQUENCE="4"
+				   TYPE="BUSCOMP"
+				   UPDATED="10/19/2010 11:28:07"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/19/2010 11:28:07"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="O"
+				   NAME="O:Go to next Oppty50"
+				   PROPERTY_NAME="AHA Total Expected Revenue"
+				   SEQUENCE="5"
+				   TYPE="EXPRESSION"
+				   VALUE_SEARCH_SPECIFICATION="[&amp;AHA Total Expected Revenue] + [&amp;AHA Current Revenue]"
+				   UPDATED="10/19/2010 11:32:18"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/19/2010 11:32:18"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="O"
+				   NAME="O:Go to next Oppty60"
+				   OUTPUT_ARG="NoMoreRecords"
+				   PROPERTY_NAME="AHA Last Record"
+				   SEQUENCE="6"
+				   TYPE="ARGUMENT"
+				   UPDATED="10/19/2010 11:33:16"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/19/2010 11:33:16"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+			</WF_STEP>
+			<WF_STEP
+			   ALLOW_RETRY_FLAG="N"
+			   EDIT="Y"
+			   EVALUATE_ALL="Y"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r13*384 36 480 849*FillBgClr8*134348798*ArrowEnd1*1"
+			   NAME="Last Record?"
+			   TYPE="DECISION_POINT"
+			   UPDATED="10/19/2010 14:45:58"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/19/2010 11:26:13"
+			   CREATED_BY="SADMIN">
+				<WF_STEP_BRANCH
+				   EDIT="Y"
+				   EVENT_CANCEL_FLAG="N"
+				   EVENT_VISIBILITY="Enterprise"
+				   INACTIVE="N"
+				   LAYOUT="@0*0*7*0*0*0*9*LineWidth1*24*FrHS1*22*P16*624 604*NPts1*22*P06*480 604*ToHS1*08*ArrowEnd1*4"
+				   NAME="NO.DEFAULT"
+				   TO_STEP_NAME="Go to next Oppty"
+				   TYPE="DEFAULT"
+				   USER_EVENT_TIMEOUT="0"
+				   UPDATED="10/19/2010 14:46:00"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/19/2010 12:55:04"
+				   CREATED_BY="SADMIN">
+					<WF_BRANCH_CONNECTOR
+					   FROM_STEP_NAME="Last Record?"
+					   INACTIVE="N"
+					   LAYOUT="@0*0*7*0*0*0*9*LineWidth1*24*FrHS1*22*P16*624 604*NPts1*22*P06*480 604*ToHS1*08*ArrowEnd1*4"
+					   NAME="NO.DEFAULT"
+					   TO_STEP_NAME="Go to next Oppty"
+					   UPDATED="10/19/2010 14:45:58"
+					   UPDATED_BY="SADMIN"
+					   CREATED="10/19/2010 12:55:04"
+					   CREATED_BY="SADMIN">
+					</WF_BRANCH_CONNECTOR>
+				</WF_STEP_BRANCH>
+				<WF_STEP_BRANCH
+				   EDIT="Y"
+				   EVENT_CANCEL_FLAG="N"
+				   EVENT_VISIBILITY="Enterprise"
+				   EXPRESSION="(AHA Last Record All Must Match (Ignore Case)(&apos;true&apos;))"
+				   INACTIVE="N"
+				   LAYOUT="@0*0*7*0*0*0*9*LineWidth1*24*FrHS1*32*P17*432 2044*NPts1*22*P06*432 844*ToHS1*18*ArrowEnd1*4"
+				   NAME="YES.DECISION"
+				   TO_STEP_NAME="Stop (Message)"
+				   TYPE="DECISION"
+				   USER_EVENT_TIMEOUT="0"
+				   UPDATED="10/19/2010 12:59:23"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/19/2010 12:55:11"
+				   CREATED_BY="SADMIN">
+					<WF_BRANCH_CONNECTOR
+					   FROM_STEP_NAME="Last Record?"
+					   INACTIVE="N"
+					   LAYOUT="@0*0*7*0*0*0*9*LineWidth1*24*FrHS1*32*P17*432 2044*NPts1*22*P06*432 844*ToHS1*18*ArrowEnd1*4"
+					   NAME="YES.DECISION"
+					   TO_STEP_NAME="Stop (Message)"
+					   UPDATED="10/19/2010 12:57:04"
+					   UPDATED_BY="SADMIN"
+					   CREATED="10/19/2010 12:55:11"
+					   CREATED_BY="SADMIN">
+					</WF_BRANCH_CONNECTOR>
+					<WF_BRANCH_CRITERIA
+					   COMPARE_TO="PROPERTY"
+					   EDIT="Y"
+					   INACTIVE="N"
+					   NAME="YES.DECISION9"
+					   OPERATION="EQ_ALL_NC"
+					   PROPERTY_NAME="AHA Last Record"
+					   SEQUENCE="9"
+					   UPDATED="10/19/2010 12:59:23"
+					   UPDATED_BY="SADMIN"
+					   CREATED="10/19/2010 12:59:23"
+					   CREATED_BY="SADMIN">
+						<WF_BRANCH_CRITERIA_VALUE
+						   EDIT="N"
+						   INACTIVE="N"
+						   LO_CHAR1="true"
+						   NAME="YES.DECISION93"
+						   SEQUENCE="3"
+						   UPDATED="10/19/2010 12:59:23"
+						   UPDATED_BY="SADMIN"
+						   CREATED="10/19/2010 12:59:23"
+						   CREATED_BY="SADMIN">
+						</WF_BRANCH_CRITERIA_VALUE>
+					</WF_BRANCH_CRITERIA>
+				</WF_STEP_BRANCH>
+			</WF_STEP>
+			<WF_STEP
+			   ALLOW_RETRY_FLAG="N"
+			   EDIT="Y"
+			   EVALUATE_ALL="Y"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r15*164 120 260 1689*FillBgClr8*134348798*ArrowEnd1*1"
+			   NAME="No Data"
+			   TYPE="DECISION_POINT"
+			   UPDATED="10/19/2010 19:45:58"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/19/2010 11:04:03"
+			   CREATED_BY="SADMIN">
+				<WF_STEP_BRANCH
+				   EDIT="Y"
+				   EVENT_CANCEL_FLAG="N"
+				   EVENT_VISIBILITY="Enterprise"
+				   INACTIVE="N"
+				   LAYOUT="@0*0*9*0*0*0*9*LineWidth1*22*P26*289 604*FrHS1*22*P17*289 1444*NPts1*42*P07*264 1442*P36*388 604*ToHS1*08*ArrowEnd1*4"
+				   NAME="NO.DEFAULT"
+				   TO_STEP_NAME="Last Record?"
+				   TYPE="DEFAULT"
+				   USER_EVENT_TIMEOUT="0"
+				   UPDATED="10/19/2010 19:45:58"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/19/2010 12:54:43"
+				   CREATED_BY="SADMIN">
+					<WF_BRANCH_CONNECTOR
+					   FROM_STEP_NAME="No Data"
+					   INACTIVE="N"
+					   LAYOUT="@0*0*9*0*0*0*9*LineWidth1*22*P26*289 604*FrHS1*22*P17*289 1444*NPts1*42*P07*264 1442*P36*388 604*ToHS1*08*ArrowEnd1*4"
+					   NAME="NO.DEFAULT"
+					   TO_STEP_NAME="Last Record?"
+					   UPDATED="10/19/2010 19:45:58"
+					   UPDATED_BY="SADMIN"
+					   CREATED="10/19/2010 12:54:43"
+					   CREATED_BY="SADMIN">
+					</WF_BRANCH_CONNECTOR>
+				</WF_STEP_BRANCH>
+				<WF_STEP_BRANCH
+				   EDIT="Y"
+				   EVENT_CANCEL_FLAG="N"
+				   EVENT_VISIBILITY="Enterprise"
+				   EXPRESSION="(AHA Record Count All Must Match (Ignore Case)(&apos;0&apos;))"
+				   INACTIVE="N"
+				   LAYOUT="@0*0*7*0*0*0*9*LineWidth1*24*FrHS1*32*P17*212 2044*NPts1*22*P07*212 1684*ToHS1*18*ArrowEnd1*4"
+				   NAME="YES.DECISION"
+				   TO_STEP_NAME="Stop (No Data)"
+				   TYPE="DECISION"
+				   USER_EVENT_TIMEOUT="0"
+				   UPDATED="10/19/2010 12:58:21"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/19/2010 12:54:54"
+				   CREATED_BY="SADMIN">
+					<WF_BRANCH_CONNECTOR
+					   FROM_STEP_NAME="No Data"
+					   INACTIVE="N"
+					   LAYOUT="@0*0*7*0*0*0*9*LineWidth1*24*FrHS1*32*P17*212 2044*NPts1*22*P07*212 1684*ToHS1*18*ArrowEnd1*4"
+					   NAME="YES.DECISION"
+					   TO_STEP_NAME="Stop (No Data)"
+					   UPDATED="10/19/2010 12:57:20"
+					   UPDATED_BY="SADMIN"
+					   CREATED="10/19/2010 12:54:54"
+					   CREATED_BY="SADMIN">
+					</WF_BRANCH_CONNECTOR>
+					<WF_BRANCH_CRITERIA
+					   COMPARE_TO="PROPERTY"
+					   EDIT="Y"
+					   INACTIVE="N"
+					   NAME="YES.DECISION3"
+					   OPERATION="EQ_ALL_NC"
+					   PROPERTY_NAME="AHA Record Count"
+					   SEQUENCE="3"
+					   UPDATED="10/19/2010 12:58:21"
+					   UPDATED_BY="SADMIN"
+					   CREATED="10/19/2010 12:58:21"
+					   CREATED_BY="SADMIN">
+						<WF_BRANCH_CRITERIA_VALUE
+						   EDIT="N"
+						   INACTIVE="N"
+						   LO_NUM1="0"
+						   NAME="YES.DECISION31"
+						   SEQUENCE="1"
+						   UPDATED="10/19/2010 12:58:21"
+						   UPDATED_BY="SADMIN"
+						   CREATED="10/19/2010 12:58:21"
+						   CREATED_BY="SADMIN">
+						</WF_BRANCH_CRITERIA_VALUE>
+					</WF_BRANCH_CRITERIA>
+				</WF_STEP_BRANCH>
+			</WF_STEP>
+			<WF_STEP
+			   ALLOW_RETRY_FLAG="N"
+			   BUSINESS_COMPONENT="Opportunity"
+			   EDIT="Y"
+			   EVALUATE_ALL="Y"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r13*164 36 260 849*FillBgClr8*134218238*ArrowEnd1*1"
+			   NAME="Query Oppty Data"
+			   OPERATION="QUERY"
+			   TYPE="SIEBEL_OPER"
+			   UPDATED="10/19/2010 14:55:56"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/19/2010 11:03:52"
+			   CREATED_BY="SADMIN">
+				<WF_STEP_BRANCH
+				   EDIT="Y"
+				   EVENT_CANCEL_FLAG="N"
+				   EVENT_VISIBILITY="Enterprise"
+				   INACTIVE="N"
+				   LAYOUT="@0*0*7*0*0*0*9*LineWidth1*24*FrHS1*32*P17*212 1204*NPts1*22*P06*212 844*ToHS1*18*ArrowEnd1*4"
+				   NAME="Connector 1"
+				   TO_STEP_NAME="No Data"
+				   TYPE="CONNECTOR"
+				   USER_EVENT_TIMEOUT="0"
+				   UPDATED="10/19/2010 12:57:20"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/19/2010 12:54:31"
+				   CREATED_BY="SADMIN">
+					<WF_BRANCH_CONNECTOR
+					   FROM_STEP_NAME="Query Oppty Data"
+					   INACTIVE="N"
+					   LAYOUT="@0*0*7*0*0*0*9*LineWidth1*24*FrHS1*32*P17*212 1204*NPts1*22*P06*212 844*ToHS1*18*ArrowEnd1*4"
+					   NAME="Connector 1"
+					   TO_STEP_NAME="No Data"
+					   UPDATED="10/19/2010 12:57:20"
+					   UPDATED_BY="SADMIN"
+					   CREATED="10/19/2010 12:54:32"
+					   CREATED_BY="SADMIN">
+					</WF_BRANCH_CONNECTOR>
+				</WF_STEP_BRANCH>
+				<WF_STEP_I_O_ARGUMENT
+				   BUSINESS_COMPONENT="Opportunity"
+				   BUSINESS_COMPONENT_FIELD="Primary Revenue Expected Value"
+				   INACTIVE="N"
+				   INPUT_FLAG="O"
+				   NAME="O:Query Oppty Data20"
+				   PROPERTY_NAME="AHA Total Expected Revenue"
+				   SEQUENCE="4"
+				   TYPE="BUSCOMP"
+				   UPDATED="10/19/2010 11:24:18"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/19/2010 11:22:50"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="O"
+				   NAME="O:Query Oppty Data30"
+				   OUTPUT_ARG="NumAffRows"
+				   PROPERTY_NAME="AHA Record Count"
+				   SEQUENCE="3"
+				   TYPE="ARGUMENT"
+				   UPDATED="10/19/2010 11:23:54"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/19/2010 11:23:54"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+				<WF_STEP_I_O_ARGUMENT
+				   BUSINESS_COMPONENT="Opportunity"
+				   BUSINESS_COMPONENT_FIELD="Currency Code"
+				   INACTIVE="N"
+				   INPUT_FLAG="O"
+				   NAME="O:Query Oppty Data90"
+				   PROPERTY_NAME="AHA Currency Code"
+				   SEQUENCE="9"
+				   TYPE="BUSCOMP"
+				   UPDATED="10/19/2010 14:55:56"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/19/2010 14:54:58"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+				<WF_STEP_I_O_ARGUMENT
+				   BUSINESS_COMPONENT="Opportunity"
+				   INACTIVE="N"
+				   INPUT_FLAG="S"
+				   NAME="S:Query Oppty Data10"
+				   OUTPUT_ARG="Opportunity"
+				   SEQUENCE="1"
+				   TYPE="EXPRESSION"
+				   VALUE_SEARCH_SPECIFICATION="&quot;[Primary Revenue Expected Value]&gt;=&quot; + [&amp;AHA Minimum Expected Value] + &quot; AND [Primary Revenue Close Date] &lt;= Today()+&quot; + [&amp;AHA Number Of Days] + &quot; AND [Primary Revenue Close Date] &gt;= Today()&quot;"
+				   UPDATED="10/19/2010 11:17:49"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/19/2010 11:05:31"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+			</WF_STEP>
+			<WF_STEP
+			   ALLOW_RETRY_FLAG="N"
+			   EDIT="Y"
+			   EVALUATE_ALL="Y"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r12*32 36 128 849*FillBgClr8*167641088*ArrowEnd1*1"
+			   NAME="Start"
+			   TYPE="START"
+			   UPDATED="10/19/2010 14:56:34"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/19/2010 11:03:39"
+			   CREATED_BY="SADMIN">
+				<WF_STEP_BRANCH
+				   EDIT="Y"
+				   EVENT_CANCEL_FLAG="N"
+				   EVENT_VISIBILITY="Enterprise"
+				   INACTIVE="N"
+				   LAYOUT="@0*0*7*0*0*0*9*LineWidth1*24*FrHS1*22*P16*164 604*NPts1*22*P06*116 604*ToHS1*08*ArrowEnd1*4"
+				   NAME="Go"
+				   TO_STEP_NAME="Query Oppty Data"
+				   TYPE="DEFAULT"
+				   USER_EVENT_TIMEOUT="0"
+				   UPDATED="10/19/2010 12:57:20"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/19/2010 12:54:26"
+				   CREATED_BY="SADMIN">
+					<WF_BRANCH_CONNECTOR
+					   FROM_STEP_NAME="Start"
+					   INACTIVE="N"
+					   LAYOUT="@0*0*7*0*0*0*9*LineWidth1*24*FrHS1*22*P16*164 604*NPts1*22*P06*116 604*ToHS1*08*ArrowEnd1*4"
+					   NAME="Go"
+					   TO_STEP_NAME="Query Oppty Data"
+					   UPDATED="10/19/2010 12:57:20"
+					   UPDATED_BY="SADMIN"
+					   CREATED="10/19/2010 12:54:26"
+					   CREATED_BY="SADMIN">
+					</WF_BRANCH_CONNECTOR>
+				</WF_STEP_BRANCH>
+			</WF_STEP>
+			<WF_STEP
+			   ALLOW_RETRY_FLAG="N"
+			   EDIT="Y"
+			   ERROR_CODE="WF_ERR_CUSTOM_2"
+			   ERROR_MESSAGE="%1"
+			   EVALUATE_ALL="Y"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*4*0*0*0*1*r15*384 204 480 2529*FillBgClr8*100794369*LineColor3*2558*ArrowEnd1*1"
+			   NAME="Stop (Message)"
+			   TYPE="ABORT"
+			   UPDATED="10/19/2010 13:03:35"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/19/2010 12:53:53"
+			   CREATED_BY="SADMIN">
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="I"
+				   NAME="%1"
+				   SEQUENCE="8"
+				   TYPE="EXPRESSION"
+				   VALUE_SEARCH_SPECIFICATION="&quot;Total expected revenue for the customer account is &quot; + [&amp;AHA Currency Code] + &quot; &quot; + [&amp;AHA Total Expected Revenue] + &quot;.&quot;"
+				   UPDATED="10/19/2010 14:56:34"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/19/2010 13:03:27"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+			</WF_STEP>
+			<WF_STEP
+			   ALLOW_RETRY_FLAG="N"
+			   EDIT="Y"
+			   ERROR_CODE="WF_ERR_CUSTOM_1"
+			   ERROR_MESSAGE="%1"
+			   EVALUATE_ALL="Y"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*4*0*0*0*1*r15*164 204 260 2529*FillBgClr8*100794369*LineColor3*2558*ArrowEnd1*1"
+			   NAME="Stop (No Data)"
+			   TYPE="ABORT"
+			   UPDATED="10/19/2010 13:03:09"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/19/2010 11:18:50"
+			   CREATED_BY="SADMIN">
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="I"
+				   NAME="%1"
+				   SEQUENCE="7"
+				   TYPE="EXPRESSION"
+				   VALUE_SEARCH_SPECIFICATION="&quot;No Opportunities found with an expected revenue of more than &quot; +[&amp;AHA Minimum Expected Value] + &quot; and a close date between today and &quot; + (Today()+[&amp;AHA Number Of Days]) + &quot;.&quot;"
+				   UPDATED="10/19/2010 14:51:10"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/19/2010 12:59:54"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+			</WF_STEP>
+		</WORKFLOW_PROCESS>
+	</PROJECT>
+</REPOSITORY>
+
+
+

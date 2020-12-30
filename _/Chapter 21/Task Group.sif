@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<REPOSITORY
+   NAME="Siebel Repository"
+   UPDATED="10/17/2008 10:12:45"
+   UPDATED_BY="SADMIN"
+   CREATED="10/17/2008 09:26:09"
+   CREATED_BY="SADMIN"
+   FIO_PLACEHOLDER_FIO="TRUE">
+	<PROJECT
+	   ALLOW_OBJECT_LOCKING="Y"
+	   INACTIVE="N"
+	   LOCKED="N"
+	   NAME="AHA Task UI"
+	   UI_FREEZE="N"
+	   UPDATED="12/16/2010 19:33:26"
+	   UPDATED_BY="SADMIN"
+	   CREATED="10/22/2010 17:27:00"
+	   CREATED_BY="SADMIN"
+	   FIO_PLACEHOLDER_FIO="TRUE">
+		<TASK_GROUP
+		   INACTIVE="N"
+		   NAME="AHA Task Group"
+		   OBJECT_LOCKED="N"
+		   REQUIRE_CONTEXT_BC="N"
+		   UPDATED="12/16/2010 19:33:26"
+		   UPDATED_BY="SADMIN"
+		   CREATED="10/24/2010 19:38:45"
+		   CREATED_BY="SADMIN">
+			<TASK_GROUP_ITEM
+			   INACTIVE="N"
+			   NAME="AHA Sales Process"
+			   SEQUENCE="10"
+			   TASK_NAME="AHA Sales Process"
+			   TYPE="Task"
+			   UPDATED="10/24/2010 19:39:11"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/24/2010 19:39:11"
+			   CREATED_BY="SADMIN">
+			</TASK_GROUP_ITEM>
+			<TASK_GROUP_LOCALE
+			   APPLICATION_CODE="STD"
+			   DISPLAY_NAME="AHA Business Processes"
+			   INACTIVE="N"
+			   LANGUAGE_CODE="ENU"
+			   NAME="ENU-STD"
+			   REDO="N"
+			   TRANSLATE="Y"
+			   UPDATED="10/24/2010 19:39:03"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/24/2010 19:39:03"
+			   CREATED_BY="SADMIN">
+			</TASK_GROUP_LOCALE>
+		</TASK_GROUP>
+	</PROJECT>
+	<PROJECT
+	   ALLOW_OBJECT_LOCKING="Y"
+	   INACTIVE="N"
+	   LANGUAGE_LOCKED="ENU"
+	   LOCKED="Y"
+	   LOCKED_DATE="10/24/2010 19:39:35"
+	   NAME="Task UI Framework (SWE)"
+	   UI_FREEZE="N"
+	   LOCKED_BY_NAME="SADMIN"
+	   UPDATED="10/24/2010 19:39:49"
+	   UPDATED_BY="SADMIN"
+	   CREATED="08/27/2005 02:40:14"
+	   CREATED_BY="SADMIN"
+	   FIO_PLACEHOLDER_FIO="TRUE">
+		<VIEW
+		   ADD_TO_HISTORY="N"
+		   ADMIN_MODE_FLAG="N"
+		   BUSINESS_OBJECT="Task Pane"
+		   DISABLE_PDQ="N"
+		   EXPLICIT_LOGIN="N"
+		   INACTIVE="N"
+		   NAME="Task Pane View"
+		   NO_BORDERS="N"
+		   OBJECT_LOCKED="N"
+		   SCREEN_MENU="Y"
+		   SECURE="N"
+		   TITLE_-_STRING_REFERENCE="SBL_TASK_UI_PANE"
+		   TYPE="Standard"
+		   UPGRADE_BEHAVIOR="Preserve"
+		   UPDATED="10/24/2010 19:39:49"
+		   UPDATED_BY="SADMIN"
+		   CREATED="08/27/2005 05:15:07"
+		   CREATED_BY="SADMIN">
+			<VIEW_TASK_GROUP
+			   INACTIVE="N"
+			   NAME="AHA Task Group"
+			   TASK_GROUP="AHA Task Group"
+			   UPDATED="10/24/2010 19:39:40"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/24/2010 19:39:40"
+			   CREATED_BY="SADMIN">
+			</VIEW_TASK_GROUP>
+			<VIEW_TASK_GROUP
+			   COMMENTS="Should be using &apos;Siebel Field Service&apos; app, but Tools&apos; bug does not allow it"
+			   INACTIVE="N"
+			   NAME="Asset Contract Task Group"
+			   TASK_GROUP="Asset Contract Task Group"
+			   UPDATED="09/01/2005 20:51:38"
+			   UPDATED_BY="SADMIN"
+			   CREATED="09/01/2005 20:51:38"
+			   CREATED_BY="SADMIN">
+			</VIEW_TASK_GROUP>
+			<VIEW_TASK_GROUP
+			   APPLICATION="Siebel Field Service"
+			   INACTIVE="N"
+			   NAME="Field Activity Task Group"
+			   TASK_GROUP="Field Activity Task Group"
+			   UPDATED="09/01/2005 20:51:38"
+			   UPDATED_BY="SADMIN"
+			   CREATED="09/01/2005 20:51:38"
+			   CREATED_BY="SADMIN">
+			</VIEW_TASK_GROUP>
+			<VIEW_TASK_GROUP
+			   INACTIVE="N"
+			   NAME="Task Pane Group"
+			   SEQUENCE="1"
+			   TASK_GROUP="Task Pane Group"
+			   UPDATED="12/14/2005 04:12:10"
+			   UPDATED_BY="SADMIN"
+			   CREATED="12/14/2005 04:12:10"
+			   CREATED_BY="SADMIN">
+			</VIEW_TASK_GROUP>
+			<VIEW_WEB_TEMPLATE
+			   INACTIVE="N"
+			   NAME="Base"
+			   USER_LAYOUT="N"
+			   WEB_TEMPLATE="View Task Pane"
+			   UPDATED="08/27/2005 05:17:03"
+			   UPDATED_BY="SADMIN"
+			   CREATED="08/27/2005 05:15:42"
+			   CREATED_BY="SADMIN">
+				<VIEW_WEB_TEMPLATE_ITEM
+				   APPLET="Task Pane Applet"
+				   APPLET_MODE="Base"
+				   INACTIVE="N"
+				   ITEM_IDENTIFIER="1"
+				   MARKUP_LANGUAGE="HTML"
+				   NAME="Task Pane Applet"
+				   UPDATED="08/27/2005 05:17:03"
+				   UPDATED_BY="SADMIN"
+				   CREATED="08/27/2005 05:17:03"
+				   CREATED_BY="SADMIN">
+				</VIEW_WEB_TEMPLATE_ITEM>
+			</VIEW_WEB_TEMPLATE>
+		</VIEW>
+	</PROJECT>
+</REPOSITORY>
+
+
+

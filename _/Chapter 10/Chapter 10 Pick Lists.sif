@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<REPOSITORY
+   NAME="Siebel Repository"
+   UPDATED="10/17/2008 01:12:45"
+   UPDATED_BY="SADMIN"
+   CREATED="10/17/2008 00:26:09"
+   CREATED_BY="SADMIN"
+   FIO_PLACEHOLDER_FIO="TRUE">
+	<PROJECT
+	   ALLOW_OBJECT_LOCKING="Y"
+	   COMMENTS="Created for AHA prototype"
+	   INACTIVE="N"
+	   LOCKED="N"
+	   NAME="AHA Business Components"
+	   UI_FREEZE="N"
+	   UPDATED="10/07/2010 10:43:50"
+	   UPDATED_BY="SADMIN"
+	   CREATED="09/03/2010 06:59:24"
+	   CREATED_BY="SADMIN"
+	   FIO_PLACEHOLDER_FIO="TRUE">
+		<PICK_LIST
+		   BOUNDED="Y"
+		   BUSINESS_COMPONENT="PickList Generic"
+		   INACTIVE="N"
+		   LONG_LIST="N"
+		   NAME="AHA Customer Response Pick List"
+		   NO_DELETE="Y"
+		   NO_INSERT="Y"
+		   NO_MERGE="Y"
+		   NO_UPDATE="Y"
+		   OBJECT_LOCKED="N"
+		   SORT_SPECIFICATION="Order By"
+		   STATIC="Y"
+		   TYPE_FIELD="Type"
+		   TYPE_VALUE="AHA_CUST_RESPONSE"
+		   VISIBILITY_AUTO_ALL="N"
+		   UPDATED="10/07/2010 10:43:46"
+		   UPDATED_BY="SADMIN"
+		   CREATED="10/07/2010 04:07:50"
+		   CREATED_BY="SADMIN">
+		</PICK_LIST>
+		<PICK_LIST
+		   BOUNDED="N"
+		   BUSINESS_COMPONENT="Internal Product"
+		   INACTIVE="N"
+		   LONG_LIST="N"
+		   NAME="AHA Orderable Product Pick List"
+		   NO_DELETE="Y"
+		   NO_INSERT="Y"
+		   NO_MERGE="Y"
+		   NO_UPDATE="Y"
+		   OBJECT_LOCKED="N"
+		   SEARCH_SPECIFICATION="[Orderable]=&quot;Y&quot;"
+		   SORT_SPECIFICATION="Name"
+		   STATIC="N"
+		   VISIBILITY_AUTO_ALL="N"
+		   UPDATED="10/07/2010 10:43:50"
+		   UPDATED_BY="SADMIN"
+		   CREATED="10/07/2010 05:09:17"
+		   CREATED_BY="SADMIN">
+		</PICK_LIST>
+	</PROJECT>
+</REPOSITORY>
+
+
+

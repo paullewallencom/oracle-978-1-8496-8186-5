@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><?Siebel-Property-Set EscapeNames="true"?><SiebelMessage
+><__und_undPROPERTIES_und_und
+><TargetServerPath
+></TargetServerPath
+><SourceServiceMethod
+></SourceServiceMethod
+><SchemaVersion
+>45.19.0.22</SchemaVersion
+><SRFVersion
+>43|1224322639|1284132170</SRFVersion
+><SessionId
+>8SIA-7YU5V</SessionId
+><AcknowledgementWorkflow
+>UDA Acknowledgement</AcknowledgementWorkflow
+><PostProcessWorkflow
+>Testing</PostProcessWorkflow
+><Asynchronous
+>Y</Asynchronous
+><TransactionLogFileName
+>8SIA-7YU5V</TransactionLogFileName
+><TransactionName
+>Responsibility</TransactionName
+><AsyncExportFile
+>N</AsyncExportFile
+><UserName
+></UserName
+><Password
+></Password
+><TargetServiceName
+></TargetServiceName
+><AsyncDataPrep
+>Y</AsyncDataPrep
+><TargetWorkflow
+>UDA Target Workflow</TargetWorkflow
+><EAIQueueType
+>On Error</EAIQueueType
+><TargetServiceMethod
+></TargetServiceMethod
+><SourceServiceName
+></SourceServiceName
+><TargetSubsystem
+>UDADeploy</TargetSubsystem
+><Description
+></Description
+><SessionProjectName
+>AHA Responsibility</SessionProjectName
+><ExportFilePath
+>C:\TEMP</ExportFilePath
+><TransactionLogFilePath
+>C:\SIA81\CLIENT\temp\8SIA-7YU5V.log</TransactionLogFilePath
+><TransactionId
+>8SIA-7YU5W</TransactionId
+></__und_undPROPERTIES_und_und
+><EAIMessage
+><__und_undPROPERTIES_und_und
+><SessionItemName
+>Responsibility</SessionItemName
+><SessionName
+>EMT Session</SessionName
+><DataTypeName
+>Responsibility</DataTypeName
+><MessageId
+></MessageId
+><GroupName
+>Responsibility</GroupName
+><MessageType
+>Integration Object</MessageType
+><IntObjectName
+>UDA Responsibilities</IntObjectName
+><IntObjectFormat
+>Siebel Hierarchical</IntObjectFormat
+><EAIMethod
+>Synchronize</EAIMethod
+></__und_undPROPERTIES_und_und
+><ListOfUDA_spcResponsibilities
+><Responsibility
+><__und_undPROPERTIES_und_und
+><Read_spcOnly_spcView
+></Read_spcOnly_spcView
+><Access_spcType
+></Access_spcType
+><Responsibility_spcView_spcLocal_spcAccess
+></Responsibility_spcView_spcLocal_spcAccess
+><Name
+>AHA Prototype</Name
+><Description
+>AHA UI Prototype - testing only</Description
+></__und_undPROPERTIES_und_und
+><ListOfResponsibility_undOrganization
+><Responsibility_undOrganization
+><__und_undPROPERTIES_und_und
+><IsPrimaryMVG
+>Y</IsPrimaryMVG
+><Location
+>INTERNAL</Location
+><Organization
+>Default Organization</Organization
+></__und_undPROPERTIES_und_und
+></Responsibility_undOrganization
+></ListOfResponsibility_undOrganization
+><ListOfFeature_spcAccess
+><Feature_spcAccess
+><__und_undPROPERTIES_und_und
+><Auto_spcSmart_spcScript_spcName
+></Auto_spcSmart_spcScript_spcName
+><Auto_spcSmart_spcScript_spcId
+></Auto_spcSmart_spcScript_spcId
+><Read_spcOnly_spcView
+>N</Read_spcOnly_spcView
+><Responsibility_spcView_spcLocal_spcAccess
+>Y</Responsibility_spcView_spcLocal_spcAccess
+><Local_spcAccess
+>Y</Local_spcAccess
+><Name
+>AHA Customer Process Start View</Name
+><Description
+>AHA UI Prototype</Description
+></__und_undPROPERTIES_und_und
+></Feature_spcAccess
+></ListOfFeature_spcAccess
+><ListOfResponsibility_undFeature_spcAccess
+><Responsibility_undFeature_spcAccess
+><__und_undPROPERTIES_und_und
+><IsPrimaryMVG
+>N</IsPrimaryMVG
+><View
+>AHA Customer Process Start View</View
+></__und_undPROPERTIES_und_und
+></Responsibility_undFeature_spcAccess
+></ListOfResponsibility_undFeature_spcAccess
+><ListOfUser
+><User
+><__und_undPROPERTIES_und_und
+><User_spcFlag
+>Y</User_spcFlag
+><First_spcName
+>Siebel</First_spcName
+><New_spcResponsibility
+>Siebel Administrator</New_spcResponsibility
+><Last_spcName
+>Administrator</Last_spcName
+><Party_spcName
+>SiebelAdministrator</Party_spcName
+><User_spcComments
+></User_spcComments
+><Personal_spcContact
+>N</Personal_spcContact
+><eTraining_spcDelegated_spcAdmin
+>N</eTraining_spcDelegated_spcAdmin
+><Login_spcName
+>SADMIN</Login_spcName
+><Middle_spcName
+></Middle_spcName
+><User_spcType
+></User_spcType
+><Party_spcType_spcCode
+>Person</Party_spcType_spcCode
+><Login_spcDomain
+></Login_spcDomain
+></__und_undPROPERTIES_und_und
+></User
+></ListOfUser
+></Responsibility
+></ListOfUDA_spcResponsibilities
+></EAIMessage
+></SiebelMessage
+>

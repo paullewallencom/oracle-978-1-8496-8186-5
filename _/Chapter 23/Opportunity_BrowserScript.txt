@@ -1,0 +1,66 @@
+function BusComp_PreSetFieldValue (fieldName, value)
+{
+	if (fieldName == "Primary Revenue Close Date")
+	{
+		try
+		{
+			//read date from field value
+			var dInputDate = new Date(value);
+			//read current date						  
+			var dCurrentDate = new Date();
+			//response message from prompt
+			var response;
+			//currently active applet reference
+			var oApplet = theApplication().ActiveApplet();
+			//return code
+			var returncode = "ContinueOperation";
+			//message to be displayed to the user
+			var message = "";
+			//control object
+			var oControl;
+			
+			//calculate date difference
+			if (eval(dInputDate - dCurrentDate) < 0)
+			{//Input date is in the past
+
+				//for demonstration purposes:
+				//set bg color of CloseDate2 control
+				if (oApplet.Name() == "Opportunity Form Applet - Child")
+				{
+					oControl = oApplet.FindControl("CloseDate2");
+					oControl.SetProperty("BgColor", "#E8624C");
+				}
+				message = "You have entered a date in the past.\n" +
+							  "Click OK to continue or click Cancel to abort."
+				response = confirm(message);
+			}
+				
+			switch (response)
+			{
+				case true: returncode = "ContinueOperation";
+						   break;
+				case false: returncode = "CancelOperation";
+					        break;
+				default: returncode = "CancelOperation";
+						 break;
+			}
+		}
+		catch (e)
+		{
+			returncode = "CancelOperation";
+			theApplication().SWEAlert("Error: " + e.toString());
+		}
+		finally
+		{
+			oControl = null;
+			message = null;
+			returncode = null;
+			oApplet = null;
+			response = null;
+			dCurrentDate = null;
+			dInputDate = null;
+		}
+		return (returncode);
+	}
+	return ("ContinueOperation");
+}

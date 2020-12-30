@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<REPOSITORY
+   NAME="Siebel Repository"
+   UPDATED="10/17/2008 10:12:45"
+   UPDATED_BY="SADMIN"
+   CREATED="10/17/2008 09:26:09"
+   CREATED_BY="SADMIN"
+   FIO_PLACEHOLDER_FIO="TRUE">
+	<PROJECT
+	   ALLOW_OBJECT_LOCKING="Y"
+	   INACTIVE="N"
+	   LOCKED="N"
+	   NAME="AHA Task UI"
+	   UI_FREEZE="N"
+	   UPDATED="12/16/2010 19:29:52"
+	   UPDATED_BY="SADMIN"
+	   CREATED="10/22/2010 17:27:00"
+	   CREATED_BY="SADMIN"
+	   FIO_PLACEHOLDER_FIO="TRUE">
+		<VIEW
+		   ADD_TO_HISTORY="N"
+		   ADMIN_MODE_FLAG="N"
+		   BUSINESS_OBJECT="Account"
+		   DISABLE_PDQ="N"
+		   EXPLICIT_LOGIN="N"
+		   INACTIVE="N"
+		   NAME="AHA Create Account Task View"
+		   NO_BORDERS="N"
+		   OBJECT_LOCKED="N"
+		   SCREEN_MENU="Y"
+		   SECURE="N"
+		   TITLE_-_STRING_REFERENCE="SBL_CREATE_ACCOUNT-1004225038-04I"
+		   TYPE="Task"
+		   UPGRADE_BEHAVIOR="Preserve"
+		   UPDATED="12/16/2010 19:29:49"
+		   UPDATED_BY="SADMIN"
+		   CREATED="10/22/2010 18:12:58"
+		   CREATED_BY="SADMIN">
+			<VIEW_WEB_TEMPLATE
+			   INACTIVE="N"
+			   NAME="Base"
+			   USER_LAYOUT="N"
+			   WEB_TEMPLATE="View Basic"
+			   UPDATED="10/22/2010 18:12:58"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/22/2010 18:12:58"
+			   CREATED_BY="SADMIN">
+				<VIEW_WEB_TEMPLATE_ITEM
+				   APPLET="AHA Customer Profile Form Applet"
+				   APPLET_MODE="Edit"
+				   INACTIVE="N"
+				   ITEM_IDENTIFIER="1"
+				   MARKUP_LANGUAGE="HTML"
+				   NAME="AHA Customer Profile Form Applet"
+				   UPDATED="10/22/2010 18:12:58"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/22/2010 18:12:58"
+				   CREATED_BY="SADMIN">
+				</VIEW_WEB_TEMPLATE_ITEM>
+				<VIEW_WEB_TEMPLATE_ITEM
+				   APPLET="Task Playbar Applet - Bottom"
+				   APPLET_MODE="Base"
+				   INACTIVE="N"
+				   ITEM_IDENTIFIER="2"
+				   MARKUP_LANGUAGE="HTML"
+				   NAME="Task Playbar Applet - Bottom"
+				   UPDATED="10/22/2010 18:12:58"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/22/2010 18:12:58"
+				   CREATED_BY="SADMIN">
+				</VIEW_WEB_TEMPLATE_ITEM>
+			</VIEW_WEB_TEMPLATE>
+		</VIEW>
+		<VIEW
+		   ADD_TO_HISTORY="N"
+		   ADMIN_MODE_FLAG="N"
+		   BUSINESS_OBJECT="Account"
+		   DISABLE_PDQ="N"
+		   EXPLICIT_LOGIN="N"
+		   INACTIVE="N"
+		   NAME="AHA Create Order Task View"
+		   NO_BORDERS="N"
+		   OBJECT_LOCKED="N"
+		   SCREEN_MENU="Y"
+		   SECURE="N"
+		   TITLE_-_STRING_REFERENCE="SBL_CREATE_ACCOUNT-1004225038-04I"
+		   TYPE="Task"
+		   UPGRADE_BEHAVIOR="Preserve"
+		   UPDATED="12/16/2010 19:29:52"
+		   UPDATED_BY="SADMIN"
+		   CREATED="10/22/2010 18:16:04"
+		   CREATED_BY="SADMIN">
+			<VIEW_WEB_TEMPLATE
+			   INACTIVE="N"
+			   NAME="Base"
+			   USER_LAYOUT="N"
+			   WEB_TEMPLATE="View Basic"
+			   UPDATED="10/22/2010 18:17:28"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/22/2010 18:16:04"
+			   CREATED_BY="SADMIN">
+				<VIEW_WEB_TEMPLATE_ITEM
+				   APPLET="AHA Simple Order Form Applet"
+				   APPLET_MODE="Edit"
+				   INACTIVE="N"
+				   ITEM_IDENTIFIER="1"
+				   MARKUP_LANGUAGE="HTML"
+				   NAME="AHA Simple Order Form Applet"
+				   UPDATED="10/22/2010 18:17:28"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/22/2010 18:16:04"
+				   CREATED_BY="SADMIN">
+				</VIEW_WEB_TEMPLATE_ITEM>
+				<VIEW_WEB_TEMPLATE_ITEM
+				   APPLET="Task Playbar Applet - Bottom"
+				   APPLET_MODE="Base"
+				   INACTIVE="N"
+				   ITEM_IDENTIFIER="2"
+				   MARKUP_LANGUAGE="HTML"
+				   NAME="Task Playbar Applet - Bottom"
+				   UPDATED="10/22/2010 18:16:04"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/22/2010 18:16:04"
+				   CREATED_BY="SADMIN">
+				</VIEW_WEB_TEMPLATE_ITEM>
+			</VIEW_WEB_TEMPLATE>
+		</VIEW>
+		<VIEW
+		   ADD_TO_HISTORY="N"
+		   ADMIN_MODE_FLAG="N"
+		   BUSINESS_OBJECT="Account"
+		   DISABLE_PDQ="N"
+		   EXPLICIT_LOGIN="N"
+		   INACTIVE="N"
+		   NAME="AHA Create Quote Task View"
+		   NO_BORDERS="N"
+		   OBJECT_LOCKED="N"
+		   SCREEN_MENU="Y"
+		   SECURE="N"
+		   TITLE_-_STRING_REFERENCE="SBL_CREATE_ACCOUNT-1004225038-04I"
+		   TYPE="Task"
+		   UPGRADE_BEHAVIOR="Preserve"
+		   UPDATED="12/16/2010 19:29:52"
+		   UPDATED_BY="SADMIN"
+		   CREATED="10/22/2010 18:15:58"
+		   CREATED_BY="SADMIN">
+			<VIEW_WEB_TEMPLATE
+			   INACTIVE="N"
+			   NAME="Base"
+			   USER_LAYOUT="N"
+			   WEB_TEMPLATE="View Basic"
+			   UPDATED="10/22/2010 18:16:36"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/22/2010 18:15:58"
+			   CREATED_BY="SADMIN">
+				<VIEW_WEB_TEMPLATE_ITEM
+				   APPLET="AHA Simple Quote Form Applet"
+				   APPLET_MODE="Edit"
+				   INACTIVE="N"
+				   ITEM_IDENTIFIER="1"
+				   MARKUP_LANGUAGE="HTML"
+				   NAME="AHA Simple Quote Form Applet"
+				   UPDATED="10/22/2010 18:16:36"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/22/2010 18:15:58"
+				   CREATED_BY="SADMIN">
+				</VIEW_WEB_TEMPLATE_ITEM>
+				<VIEW_WEB_TEMPLATE_ITEM
+				   APPLET="Task Playbar Applet - Bottom"
+				   APPLET_MODE="Base"
+				   INACTIVE="N"
+				   ITEM_IDENTIFIER="2"
+				   MARKUP_LANGUAGE="HTML"
+				   NAME="Task Playbar Applet - Bottom"
+				   UPDATED="10/22/2010 18:15:58"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/22/2010 18:15:58"
+				   CREATED_BY="SADMIN">
+				</VIEW_WEB_TEMPLATE_ITEM>
+			</VIEW_WEB_TEMPLATE>
+		</VIEW>
+		<VIEW
+		   ADD_TO_HISTORY="N"
+		   ADMIN_MODE_FLAG="N"
+		   BUSINESS_OBJECT="Account"
+		   DISABLE_PDQ="N"
+		   EXPLICIT_LOGIN="N"
+		   INACTIVE="N"
+		   NAME="AHA Partner Query Task View"
+		   NO_BORDERS="N"
+		   OBJECT_LOCKED="N"
+		   SCREEN_MENU="Y"
+		   SECURE="N"
+		   TYPE="Task"
+		   UPGRADE_BEHAVIOR="Preserve"
+		   UPDATED="12/16/2010 19:29:52"
+		   UPDATED_BY="SADMIN"
+		   CREATED="10/22/2010 17:59:58"
+		   CREATED_BY="SADMIN">
+			<VIEW_LOCALE
+			   APPLICATION_CODE="STD"
+			   INACTIVE="N"
+			   LANGUAGE_CODE="ENU"
+			   NAME="ENU-STD"
+			   TITLE="Partner Query"
+			   TRANSLATE="Y"
+			   UPDATED="10/22/2010 17:59:58"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/22/2010 17:59:58"
+			   CREATED_BY="SADMIN">
+			</VIEW_LOCALE>
+			<VIEW_WEB_TEMPLATE
+			   INACTIVE="N"
+			   NAME="Base"
+			   USER_LAYOUT="N"
+			   WEB_TEMPLATE="View Basic"
+			   UPDATED="10/29/2010 15:51:57"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/22/2010 17:59:59"
+			   CREATED_BY="SADMIN">
+				<VIEW_WEB_TEMPLATE_ITEM
+				   APPLET="AHA Partner Query Task Applet"
+				   APPLET_MODE="Edit"
+				   INACTIVE="N"
+				   ITEM_IDENTIFIER="2"
+				   MARKUP_LANGUAGE="HTML"
+				   NAME="AHA Partner Query Task Applet"
+				   UPDATED="10/29/2010 15:49:47"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/22/2010 17:59:59"
+				   CREATED_BY="SADMIN">
+				</VIEW_WEB_TEMPLATE_ITEM>
+				<VIEW_WEB_TEMPLATE_ITEM
+				   APPLET="AHA Task Message Applet"
+				   APPLET_MODE="Base"
+				   INACTIVE="Y"
+				   ITEM_IDENTIFIER="1"
+				   MARKUP_LANGUAGE="HTML"
+				   NAME="AHA Task Message Applet"
+				   UPDATED="10/29/2010 15:51:57"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/29/2010 15:49:47"
+				   CREATED_BY="SADMIN">
+				</VIEW_WEB_TEMPLATE_ITEM>
+				<VIEW_WEB_TEMPLATE_ITEM
+				   APPLET="Task Playbar Applet - Top"
+				   APPLET_MODE="Base"
+				   INACTIVE="N"
+				   ITEM_IDENTIFIER="3"
+				   MARKUP_LANGUAGE="HTML"
+				   NAME="Task Playbar Applet - Top"
+				   UPDATED="10/29/2010 15:49:11"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/22/2010 17:59:59"
+				   CREATED_BY="SADMIN">
+				</VIEW_WEB_TEMPLATE_ITEM>
+			</VIEW_WEB_TEMPLATE>
+		</VIEW>
+	</PROJECT>
+</REPOSITORY>
+
+
+

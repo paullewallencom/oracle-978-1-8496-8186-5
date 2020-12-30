@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<REPOSITORY
+   NAME="Siebel Repository"
+   UPDATED="10/17/2008 01:12:45"
+   UPDATED_BY="SADMIN"
+   CREATED="10/17/2008 00:26:09"
+   CREATED_BY="SADMIN"
+   FIO_PLACEHOLDER_FIO="TRUE">
+	<PROJECT
+	   ALLOW_OBJECT_LOCKING="Y"
+	   INACTIVE="N"
+	   LANGUAGE_LOCKED="ENU"
+	   LOCKED="Y"
+	   LOCKED_DATE="10/12/2010 01:09:56"
+	   NAME="AHA Workflows"
+	   UI_FREEZE="N"
+	   LOCKED_BY_NAME="SADMIN"
+	   UPDATED="12/09/2010 12:12:03"
+	   UPDATED_BY="SADMIN"
+	   CREATED="10/12/2010 01:09:53"
+	   CREATED_BY="SADMIN"
+	   FIO_PLACEHOLDER_FIO="TRUE">
+		<WORKFLOW_PROCESS
+		   BUSINESS_OBJECT="Account"
+		   EDIT="N"
+		   INACTIVE="N"
+		   NAME="AHA Synchronize Customer Documents: 6"
+		   OBJECT_LOCKED="N"
+		   PASS_BY_REF_HIERARCHY_ARGUMENT="N"
+		   PROCESS_NAME="AHA Synchronize Customer Documents"
+		   REPLICATION_LEVEL="None"
+		   RUNNABLE="N"
+		   STATE_MANAGEMENT_TYPE="STATEFUL"
+		   STATUS="COMPLETED"
+		   VERSION="6"
+		   WEB_SERVICE_ENABLED="N"
+		   WORKFLOW_MODE="Service Flow"
+		   UPDATED="12/09/2010 12:12:03"
+		   UPDATED_BY="SADMIN"
+		   CREATED="12/09/2010 12:11:08"
+		   CREATED_BY="SADMIN">
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   DEFAULT_STRING="true"
+			   INOUT="INOUT"
+			   NAME="AHA Get Status Object"
+			   UPDATED="12/09/2010 12:11:11"
+			   UPDATED_BY="SADMIN"
+			   CREATED="12/09/2010 12:11:11"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   DEFAULT_STRING="AHA Account Documents Map"
+			   INOUT="INOUT"
+			   NAME="AHA Map Name"
+			   UPDATED="12/09/2010 12:11:11"
+			   UPDATED_BY="SADMIN"
+			   CREATED="12/09/2010 12:11:11"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="PROPSET_CHILD"
+			   INOUT="INOUT"
+			   NAME="AHA Source Data"
+			   UPDATED="12/09/2010 12:11:11"
+			   UPDATED_BY="SADMIN"
+			   CREATED="12/09/2010 12:11:11"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   DEFAULT_STRING="AHA Account Documents Source IO"
+			   INOUT="INOUT"
+			   NAME="AHA Source IO Name"
+			   UPDATED="12/09/2010 12:11:11"
+			   UPDATED_BY="SADMIN"
+			   CREATED="12/09/2010 12:11:11"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="PROPSET_CHILD"
+			   INOUT="INOUT"
+			   NAME="AHA Status Object Data"
+			   UPDATED="12/09/2010 12:11:11"
+			   UPDATED_BY="SADMIN"
+			   CREATED="12/09/2010 12:11:11"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="PROPSET_CHILD"
+			   INOUT="INOUT"
+			   NAME="AHA Target Data"
+			   UPDATED="12/09/2010 12:11:11"
+			   UPDATED_BY="SADMIN"
+			   CREATED="12/09/2010 12:11:11"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   INOUT="INOUT"
+			   NAME="Error Code"
+			   UPDATED="12/09/2010 12:11:11"
+			   UPDATED_BY="SADMIN"
+			   CREATED="12/09/2010 12:11:11"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   INOUT="INOUT"
+			   NAME="Error Message"
+			   UPDATED="12/09/2010 12:11:11"
+			   UPDATED_BY="SADMIN"
+			   CREATED="12/09/2010 12:11:11"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   INOUT="INOUT"
+			   NAME="Object Id"
+			   UPDATED="12/09/2010 12:11:11"
+			   UPDATED_BY="SADMIN"
+			   CREATED="12/09/2010 12:11:11"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   INOUT="INOUT"
+			   NAME="Process Instance Id"
+			   UPDATED="12/09/2010 12:11:11"
+			   UPDATED_BY="SADMIN"
+			   CREATED="12/09/2010 12:11:11"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   INOUT="INOUT"
+			   NAME="Siebel Operation Object Id"
+			   UPDATED="12/09/2010 12:11:12"
+			   UPDATED_BY="SADMIN"
+			   CREATED="12/09/2010 12:11:12"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_STEP
+			   ALLOW_RETRY_FLAG="N"
+			   EDIT="Y"
+			   EVALUATE_ALL="Y"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r13*624 24 720 729*FillBgClr8*167641088*ArrowEnd1*1"
+			   NAME="End 0"
+			   TYPE="END"
+			   UPDATED="12/09/2010 12:11:08"
+			   UPDATED_BY="SADMIN"
+			   CREATED="12/09/2010 12:11:08"
+			   CREATED_BY="SADMIN">
+			</WF_STEP>
+			<WF_STEP
+			   ALLOW_RETRY_FLAG="N"
+			   BUSINESS_SERVICE_METHOD="Query"
+			   BUSINESS_SERVICE_NAME="EAI Siebel Adapter"
+			   EDIT="Y"
+			   EVALUATE_ALL="Y"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r13*192 24 288 729*FillBgClr8*134217218*ArrowEnd1*1"
+			   NAME="Get Account Docs"
+			   TYPE="TASK"
+			   UPDATED="12/09/2010 12:11:09"
+			   UPDATED_BY="SADMIN"
+			   CREATED="12/09/2010 12:11:09"
+			   CREATED_BY="SADMIN">
+				<WF_STEP_BRANCH
+				   EDIT="Y"
+				   EVENT_CANCEL_FLAG="N"
+				   EVENT_VISIBILITY="Enterprise"
+				   INACTIVE="N"
+				   LAYOUT="@0*0*7*0*0*0*9*LineWidth1*24*FrHS1*22*P16*336 484*NPts1*22*P06*288 484*ToHS1*08*ArrowEnd1*4"
+				   NAME="Connector 1"
+				   TO_STEP_NAME="Map"
+				   TYPE="CONNECTOR"
+				   USER_EVENT_TIMEOUT="0"
+				   UPDATED="12/09/2010 12:11:09"
+				   UPDATED_BY="SADMIN"
+				   CREATED="12/09/2010 12:11:09"
+				   CREATED_BY="SADMIN">
+					<WF_BRANCH_CONNECTOR
+					   FROM_STEP_NAME="Get Account Docs"
+					   INACTIVE="N"
+					   LAYOUT="@0*0*7*0*0*0*9*LineWidth1*24*FrHS1*22*P16*336 484*NPts1*22*P06*288 484*ToHS1*08*ArrowEnd1*4"
+					   NAME="Connector 1"
+					   TO_STEP_NAME="Map"
+					   UPDATED="12/09/2010 12:11:09"
+					   UPDATED_BY="SADMIN"
+					   CREATED="12/09/2010 12:11:09"
+					   CREATED_BY="SADMIN">
+					</WF_BRANCH_CONNECTOR>
+				</WF_STEP_BRANCH>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="O"
+				   NAME="O:Get Account Docs30"
+				   OUTPUT_ARG="SiebelMessage"
+				   PROPERTY_NAME="AHA Source Data"
+				   SEQUENCE="3"
+				   TYPE="ARGUMENT"
+				   UPDATED="12/09/2010 12:11:09"
+				   UPDATED_BY="SADMIN"
+				   CREATED="12/09/2010 12:11:09"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="I"
+				   NAME="OutputIntObjectName"
+				   PROPERTY_NAME="AHA Source IO Name"
+				   SEQUENCE="1"
+				   TYPE="PROPERTY"
+				   UPDATED="12/09/2010 12:11:09"
+				   UPDATED_BY="SADMIN"
+				   CREATED="12/09/2010 12:11:09"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="I"
+				   NAME="PrimaryRowId"
+				   PROPERTY_NAME="Object Id"
+				   SEQUENCE="2"
+				   TYPE="PROPERTY"
+				   UPDATED="12/09/2010 12:11:09"
+				   UPDATED_BY="SADMIN"
+				   CREATED="12/09/2010 12:11:09"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+			</WF_STEP>
+			<WF_STEP
+			   ALLOW_RETRY_FLAG="N"
+			   BUSINESS_SERVICE_METHOD="Execute"
+			   BUSINESS_SERVICE_NAME="EAI Data Transformation Engine"
+			   EDIT="Y"
+			   EVALUATE_ALL="Y"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r13*336 24 432 729*FillBgClr8*134217218*ArrowEnd1*1"
+			   NAME="Map"
+			   TYPE="TASK"
+			   UPDATED="12/09/2010 12:11:09"
+			   UPDATED_BY="SADMIN"
+			   CREATED="12/09/2010 12:11:09"
+			   CREATED_BY="SADMIN">
+				<WF_STEP_BRANCH
+				   EDIT="Y"
+				   EVENT_CANCEL_FLAG="N"
+				   EVENT_VISIBILITY="Enterprise"
+				   INACTIVE="N"
+				   LAYOUT="@0*0*7*0*0*0*9*LineWidth1*24*FrHS1*22*P16*480 484*NPts1*22*P06*432 484*ToHS1*08*ArrowEnd1*4"
+				   NAME="Connector 2"
+				   TO_STEP_NAME="Synchronize"
+				   TYPE="CONNECTOR"
+				   USER_EVENT_TIMEOUT="0"
+				   UPDATED="12/09/2010 12:11:09"
+				   UPDATED_BY="SADMIN"
+				   CREATED="12/09/2010 12:11:09"
+				   CREATED_BY="SADMIN">
+					<WF_BRANCH_CONNECTOR
+					   FROM_STEP_NAME="Map"
+					   INACTIVE="N"
+					   LAYOUT="@0*0*7*0*0*0*9*LineWidth1*24*FrHS1*22*P16*480 484*NPts1*22*P06*432 484*ToHS1*08*ArrowEnd1*4"
+					   NAME="Connector 2"
+					   TO_STEP_NAME="Synchronize"
+					   UPDATED="12/09/2010 12:11:10"
+					   UPDATED_BY="SADMIN"
+					   CREATED="12/09/2010 12:11:10"
+					   CREATED_BY="SADMIN">
+					</WF_BRANCH_CONNECTOR>
+				</WF_STEP_BRANCH>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="I"
+				   NAME="MapName"
+				   PROPERTY_NAME="AHA Map Name"
+				   SEQUENCE="4"
+				   TYPE="PROPERTY"
+				   UPDATED="12/09/2010 12:11:10"
+				   UPDATED_BY="SADMIN"
+				   CREATED="12/09/2010 12:11:10"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="O"
+				   NAME="O:Map60"
+				   OUTPUT_ARG="SiebelMessage"
+				   PROPERTY_NAME="AHA Target Data"
+				   SEQUENCE="6"
+				   TYPE="ARGUMENT"
+				   UPDATED="12/09/2010 12:11:10"
+				   UPDATED_BY="SADMIN"
+				   CREATED="12/09/2010 12:11:10"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="I"
+				   NAME="SiebelMessage"
+				   PROPERTY_NAME="AHA Source Data"
+				   SEQUENCE="5"
+				   TYPE="PROPERTY"
+				   UPDATED="12/09/2010 12:11:10"
+				   UPDATED_BY="SADMIN"
+				   CREATED="12/09/2010 12:11:10"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+			</WF_STEP>
+			<WF_STEP
+			   ALLOW_RETRY_FLAG="N"
+			   EDIT="Y"
+			   EVALUATE_ALL="Y"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r12*48 24 144 729*FillBgClr8*167641088*ArrowEnd1*1"
+			   NAME="Start"
+			   TYPE="START"
+			   UPDATED="12/09/2010 12:11:10"
+			   UPDATED_BY="SADMIN"
+			   CREATED="12/09/2010 12:11:10"
+			   CREATED_BY="SADMIN">
+				<WF_STEP_BRANCH
+				   EDIT="Y"
+				   EVENT_CANCEL_FLAG="N"
+				   EVENT_VISIBILITY="Enterprise"
+				   INACTIVE="N"
+				   LAYOUT="@0*0*7*0*0*0*9*LineWidth1*24*FrHS1*22*P16*192 484*NPts1*22*P06*132 484*ToHS1*08*ArrowEnd1*4"
+				   NAME="Go"
+				   TO_STEP_NAME="Get Account Docs"
+				   TYPE="DEFAULT"
+				   USER_EVENT_TIMEOUT="0"
+				   UPDATED="12/09/2010 12:11:10"
+				   UPDATED_BY="SADMIN"
+				   CREATED="12/09/2010 12:11:10"
+				   CREATED_BY="SADMIN">
+					<WF_BRANCH_CONNECTOR
+					   FROM_STEP_NAME="Start"
+					   INACTIVE="N"
+					   LAYOUT="@0*0*7*0*0*0*9*LineWidth1*24*FrHS1*22*P16*192 484*NPts1*22*P06*132 484*ToHS1*08*ArrowEnd1*4"
+					   NAME="Go"
+					   TO_STEP_NAME="Get Account Docs"
+					   UPDATED="12/09/2010 12:11:10"
+					   UPDATED_BY="SADMIN"
+					   CREATED="12/09/2010 12:11:10"
+					   CREATED_BY="SADMIN">
+					</WF_BRANCH_CONNECTOR>
+				</WF_STEP_BRANCH>
+			</WF_STEP>
+			<WF_STEP
+			   ALLOW_RETRY_FLAG="N"
+			   BUSINESS_SERVICE_METHOD="Synchronize"
+			   BUSINESS_SERVICE_NAME="EAI Siebel Adapter"
+			   EDIT="Y"
+			   EVALUATE_ALL="Y"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r13*480 24 576 729*FillBgClr8*134217218*ArrowEnd1*1"
+			   NAME="Synchronize"
+			   TYPE="TASK"
+			   UPDATED="12/09/2010 12:11:11"
+			   UPDATED_BY="SADMIN"
+			   CREATED="12/09/2010 12:11:11"
+			   CREATED_BY="SADMIN">
+				<WF_STEP_BRANCH
+				   EDIT="Y"
+				   EVENT_CANCEL_FLAG="N"
+				   EVENT_VISIBILITY="Enterprise"
+				   INACTIVE="N"
+				   LAYOUT="@0*0*7*0*0*0*9*LineWidth1*24*FrHS1*22*P16*624 484*NPts1*22*P06*576 484*ToHS1*08*ArrowEnd1*4"
+				   NAME="Connector 3"
+				   TO_STEP_NAME="End 0"
+				   TYPE="CONNECTOR"
+				   USER_EVENT_TIMEOUT="0"
+				   UPDATED="12/09/2010 12:11:11"
+				   UPDATED_BY="SADMIN"
+				   CREATED="12/09/2010 12:11:11"
+				   CREATED_BY="SADMIN">
+					<WF_BRANCH_CONNECTOR
+					   FROM_STEP_NAME="Synchronize"
+					   INACTIVE="N"
+					   LAYOUT="@0*0*7*0*0*0*9*LineWidth1*24*FrHS1*22*P16*624 484*NPts1*22*P06*576 484*ToHS1*08*ArrowEnd1*4"
+					   NAME="Connector 3"
+					   TO_STEP_NAME="End 0"
+					   UPDATED="12/09/2010 12:11:11"
+					   UPDATED_BY="SADMIN"
+					   CREATED="12/09/2010 12:11:11"
+					   CREATED_BY="SADMIN">
+					</WF_BRANCH_CONNECTOR>
+				</WF_STEP_BRANCH>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="O"
+				   NAME="O:Synchronize90"
+				   OUTPUT_ARG="SiebelMessage"
+				   PROPERTY_NAME="AHA Status Object Data"
+				   SEQUENCE="9"
+				   TYPE="ARGUMENT"
+				   UPDATED="12/09/2010 12:11:11"
+				   UPDATED_BY="SADMIN"
+				   CREATED="12/09/2010 12:11:11"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="I"
+				   NAME="SiebelMessage"
+				   PROPERTY_NAME="AHA Target Data"
+				   SEQUENCE="7"
+				   TYPE="PROPERTY"
+				   UPDATED="12/09/2010 12:11:11"
+				   UPDATED_BY="SADMIN"
+				   CREATED="12/09/2010 12:11:11"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="I"
+				   NAME="StatusObject"
+				   PROPERTY_NAME="AHA Get Status Object"
+				   SEQUENCE="8"
+				   TYPE="PROPERTY"
+				   UPDATED="12/09/2010 12:11:11"
+				   UPDATED_BY="SADMIN"
+				   CREATED="12/09/2010 12:11:11"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+			</WF_STEP>
+		</WORKFLOW_PROCESS>
+	</PROJECT>
+</REPOSITORY>
+
+
+

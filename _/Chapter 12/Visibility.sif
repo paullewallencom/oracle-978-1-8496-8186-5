@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<REPOSITORY
+   NAME="Siebel Repository"
+   UPDATED="10/17/2008 10:12:45"
+   UPDATED_BY="SADMIN"
+   CREATED="10/17/2008 09:26:09"
+   CREATED_BY="SADMIN"
+   FIO_PLACEHOLDER_FIO="TRUE">
+	<PROJECT
+	   ALLOW_OBJECT_LOCKING="Y"
+	   INACTIVE="N"
+	   LANGUAGE_LOCKED="ENU"
+	   LOCKED="Y"
+	   LOCKED_DATE="06/01/2010 14:51:38"
+	   NAME="AHA User Interface"
+	   UI_FREEZE="N"
+	   LOCKED_BY_NAME="SADMIN"
+	   UPDATED="10/29/2010 16:08:25"
+	   UPDATED_BY="SADMIN"
+	   CREATED="06/01/2010 14:51:36"
+	   CREATED_BY="SADMIN"
+	   FIO_PLACEHOLDER_FIO="TRUE">
+		<VIEW
+		   ADD_TO_HISTORY="Y"
+		   ADMIN_MODE_FLAG="N"
+		   BUSINESS_OBJECT="Sales Tool"
+		   COMMENTS="Created for AHA prototype"
+		   DISABLE_PDQ="N"
+		   DROP_SECTORS="0and4"
+		   EXPLICIT_LOGIN="N"
+		   INACTIVE="N"
+		   NAME="AHA My Sales Tools List View"
+		   NO_BORDERS="N"
+		   OBJECT_LOCKED="N"
+		   SCREEN_MENU="Y"
+		   SECTOR0_APPLET="FINS Literature List Applet - My"
+		   SECTOR1_APPLET="FINS Literature List Applet - My"
+		   SECTOR2_APPLET="FINS Literature List Applet - My"
+		   SECTOR3_APPLET="FINS Literature Form Applet - My"
+		   SECTOR4_APPLET="FINS Literature List Applet - My"
+		   SECTOR5_APPLET="FINS Literature List Applet - My"
+		   SECTOR6_APPLET="FINS Literature List Applet - My"
+		   SECTOR7_APPLET="FINS Literature Form Applet - My"
+		   SECURE="N"
+		   THREAD_APPLET="Sales Tool List Applet"
+		   THREAD_FIELD="Name"
+		   THREAD_TITLE_-_STRING_REFERENCE="SBL_LITERATURE:-1009085925-1LF"
+		   TITLE_-_STRING_REFERENCE="SBL_MY_LITERATURE-1009091017-92A"
+		   TYPE="Standard"
+		   UPGRADE_BEHAVIOR="Preserve"
+		   VISIBILITY_APPLET="Sales Tool List Applet"
+		   VISIBILITY_APPLET_TYPE="Personal"
+		   UPDATED="10/29/2010 17:24:46"
+		   UPDATED_BY="SADMIN"
+		   CREATED="08/05/2010 18:54:58"
+		   CREATED_BY="SADMIN">
+			<VIEW_REPORT
+			   COMMENTS="8.0 RC"
+			   INACTIVE="N"
+			   NAME="Literature - Current Query"
+			   REPORT="Literature - Current Query"
+			   SEQUENCE="1"
+			   STATUS_TEXT_-_STRING_REFERENCE="SBL_PREPARE_LITERATURE_LIST_REPORT-1009092648-00A"
+			   UPDATED="08/05/2010 18:54:59"
+			   UPDATED_BY="SADMIN"
+			   CREATED="08/05/2010 18:54:59"
+			   CREATED_BY="SADMIN">
+			</VIEW_REPORT>
+			<VIEW_WEB_TEMPLATE
+			   INACTIVE="N"
+			   NAME="Base"
+			   USER_LAYOUT="N"
+			   WEB_TEMPLATE="View Detail (Parent with Pointer)"
+			   UPDATED="08/05/2010 18:54:59"
+			   UPDATED_BY="SADMIN"
+			   CREATED="08/05/2010 18:54:59"
+			   CREATED_BY="SADMIN">
+				<VIEW_WEB_TEMPLATE_ITEM
+				   APPLET="FINS Literature Form Applet"
+				   APPLET_MODE="Base"
+				   INACTIVE="Y"
+				   ITEM_IDENTIFIER="2"
+				   MARKUP_LANGUAGE="HTML"
+				   NAME="FINS Literature Form Applet"
+				   UPDATED="08/05/2010 18:54:59"
+				   UPDATED_BY="SADMIN"
+				   CREATED="08/05/2010 18:54:59"
+				   CREATED_BY="SADMIN">
+				</VIEW_WEB_TEMPLATE_ITEM>
+				<VIEW_WEB_TEMPLATE_ITEM
+				   APPLET="FINS Literature List Applet"
+				   APPLET_MODE="Base"
+				   INACTIVE="Y"
+				   ITEM_IDENTIFIER="1"
+				   MARKUP_LANGUAGE="HTML"
+				   NAME="FINS Literature List Applet"
+				   UPDATED="08/05/2010 18:54:59"
+				   UPDATED_BY="SADMIN"
+				   CREATED="08/05/2010 18:54:59"
+				   CREATED_BY="SADMIN">
+				</VIEW_WEB_TEMPLATE_ITEM>
+				<VIEW_WEB_TEMPLATE_ITEM
+				   APPLET="Sales Tool Entry Applet"
+				   APPLET_MODE="Edit"
+				   COMMENTS="Changed the mode to Edit"
+				   INACTIVE="N"
+				   ITEM_IDENTIFIER="2"
+				   MARKUP_LANGUAGE="HTML"
+				   NAME="Sales Tool Entry Applet"
+				   UPDATED="08/05/2010 18:54:59"
+				   UPDATED_BY="SADMIN"
+				   CREATED="08/05/2010 18:54:59"
+				   CREATED_BY="SADMIN">
+				</VIEW_WEB_TEMPLATE_ITEM>
+				<VIEW_WEB_TEMPLATE_ITEM
+				   APPLET="Sales Tool List Applet"
+				   APPLET_MODE="Edit List"
+				   COMMENTS="Changed the mode to Edit List"
+				   INACTIVE="N"
+				   ITEM_IDENTIFIER="1"
+				   MARKUP_LANGUAGE="HTML"
+				   NAME="Sales Tool List Applet"
+				   UPDATED="08/05/2010 18:54:59"
+				   UPDATED_BY="SADMIN"
+				   CREATED="08/05/2010 18:54:59"
+				   CREATED_BY="SADMIN">
+				</VIEW_WEB_TEMPLATE_ITEM>
+			</VIEW_WEB_TEMPLATE>
+		</VIEW>
+	</PROJECT>
+	<PROJECT
+	   ALLOW_OBJECT_LOCKING="Y"
+	   COMMENTS="LOCKED BY VTAO UI UPGRADE"
+	   INACTIVE="N"
+	   LOCKED="N"
+	   NAME="Literat (SSE)"
+	   UI_FREEZE="N"
+	   UPDATED="10/29/2010 17:24:35"
+	   UPDATED_BY="SADMIN"
+	   CREATED="01/01/1980 01:00:00"
+	   CREATED_BY="SADMIN"
+	   FIO_PLACEHOLDER_FIO="TRUE">
+		<SCREEN
+		   BITMAP_CATEGORY="Literature"
+		   DEFAULT_VIEW="Sales Tools List"
+		   HELP_IDENTIFIER="ID_SCREEN_LITERATURE"
+		   INACTIVE="N"
+		   NAME="Literature Screen"
+		   OBJECT_LOCKED="N"
+		   UNRESTRICTED_VIEWBAR="N"
+		   UPGRADE_BEHAVIOR="Preserve"
+		   VIEWBAR_TEXT_-_STRING_REFERENCE="SBL_LITERATURE-1009090106-2HT"
+		   UPDATED="08/05/2010 19:05:19"
+		   UPDATED_BY="SADMIN"
+		   CREATED="01/01/1980 01:00:00"
+		   CREATED_BY="SADMIN">
+			<SCREEN_VIEW
+			   6_SECTORS="Y"
+			   8_SECTORS="Y"
+			   COMMENTS="Created for AHA prototype"
+			   DISPLAY_IN_PAGE="Y"
+			   DISPLAY_IN_SITE_MAP="Y"
+			   INACTIVE="N"
+			   NAME="AHA My Sales Tools List View"
+			   PARENT_CATEGORY="Sales Tool List"
+			   SEQUENCE="1001003000"
+			   TYPE="Aggregate View"
+			   VIEW="AHA My Sales Tools List View"
+			   UPDATED="08/05/2010 19:05:19"
+			   UPDATED_BY="SADMIN"
+			   CREATED="08/05/2010 18:59:55"
+			   CREATED_BY="SADMIN">
+				<SCREEN_VIEW_LOCALE
+				   APPLICATION_CODE="STD"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   MENU_TEXT="All Sales Tools created by me"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   VIEWBAR_TEXT="All Sales Tools created by me"
+				   UPDATED="08/05/2010 19:02:18"
+				   UPDATED_BY="SADMIN"
+				   CREATED="08/05/2010 19:02:18"
+				   CREATED_BY="SADMIN">
+				</SCREEN_VIEW_LOCALE>
+			</SCREEN_VIEW>
+			<SCREEN_VIEW
+			   6_SECTORS="Y"
+			   8_SECTORS="Y"
+			   DISPLAY_IN_PAGE="Y"
+			   DISPLAY_IN_SITE_MAP="Y"
+			   INACTIVE="N"
+			   MENU_TEXT_-_STRING_REFERENCE="SBL_ALL_LITERATURE_ACROSS_ORGANIZATIONS-1004224558-18L"
+			   NAME="All Sales Tools across Organizations"
+			   PARENT_CATEGORY="Sales Tool List"
+			   SEQUENCE="1001004000"
+			   TYPE="Aggregate View"
+			   VIEW="All Sales Tools across Organizations"
+			   VIEWBAR_TEXT_-_STRING_REFERENCE="SBL_ALL_LITERATURE_ACROSS_ORGANIZATIONS-1004224558-18L"
+			   UPDATED="08/05/2010 19:05:13"
+			   UPDATED_BY="SADMIN"
+			   CREATED="12/30/1999 17:01:20"
+			   CREATED_BY="SADMIN">
+			</SCREEN_VIEW>
+			<SCREEN_VIEW
+			   6_SECTORS="Y"
+			   8_SECTORS="Y"
+			   DISPLAY_IN_PAGE="Y"
+			   DISPLAY_IN_SITE_MAP="Y"
+			   INACTIVE="N"
+			   MENU_TEXT_-_STRING_REFERENCE="SBL_ACCESS_E&amp;XCEPTIONS-1009090109-210"
+			   NAME="FINS Literature Access Exception List View"
+			   PARENT_CATEGORY="Sales Tool List"
+			   SEQUENCE="1001006000"
+			   TYPE="Detail View"
+			   VIEW="FINS Literature Access Exception List View"
+			   VIEWBAR_TEXT_-_STRING_REFERENCE="SBL_ACCESS_EXCEPTIONS-1009085735-00W"
+			   UPDATED="08/05/2010 19:05:13"
+			   UPDATED_BY="SADMIN"
+			   CREATED="06/03/2003 18:39:30"
+			   CREATED_BY="SADMIN">
+			</SCREEN_VIEW>
+			<SCREEN_VIEW
+			   6_SECTORS="Y"
+			   8_SECTORS="Y"
+			   DISPLAY_IN_PAGE="Y"
+			   DISPLAY_IN_SITE_MAP="Y"
+			   INACTIVE="N"
+			   MENU_TEXT_-_STRING_REFERENCE="SBL_LITERATURE_&amp;DISTRIBUTION-1009090327-3WX"
+			   NAME="FINS Literature Distribution List View"
+			   PARENT_CATEGORY="Sales Tool List"
+			   SEQUENCE="1001007000"
+			   TYPE="Detail View"
+			   VIEW="FINS Literature Distribution List View"
+			   VIEWBAR_TEXT_-_STRING_REFERENCE="SBL_LITERATURE_DISTRIBUTION-1009090942-8R1"
+			   UPDATED="08/05/2010 19:05:13"
+			   UPDATED_BY="SADMIN"
+			   CREATED="06/03/2003 18:39:30"
+			   CREATED_BY="SADMIN">
+			</SCREEN_VIEW>
+			<SCREEN_VIEW
+			   6_SECTORS="Y"
+			   8_SECTORS="Y"
+			   DISPLAY_IN_PAGE="Y"
+			   DISPLAY_IN_SITE_MAP="N"
+			   INACTIVE="Y"
+			   NAME="FINS Sales Tool List View - All"
+			   PARENT_CATEGORY="Sales Tool List"
+			   SEQUENCE="2001002000"
+			   TYPE="Aggregate View"
+			   VIEW="FINS Sales Tool List View - All"
+			   UPDATED="09/13/2003 06:08:11"
+			   UPDATED_BY="SADMIN"
+			   CREATED="06/03/2003 18:39:30"
+			   CREATED_BY="SADMIN">
+				<SCREEN_VIEW_LOCALE
+				   APPLICATION_CODE="STD"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   MENU_TEXT="All &amp;Literature"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   VIEWBAR_TEXT="All Literature"
+				   UPDATED="06/03/2003 20:14:50"
+				   UPDATED_BY="SADMIN"
+				   CREATED="06/03/2003 20:14:50"
+				   CREATED_BY="SADMIN">
+				</SCREEN_VIEW_LOCALE>
+			</SCREEN_VIEW>
+			<SCREEN_VIEW
+			   6_SECTORS="Y"
+			   8_SECTORS="Y"
+			   DISPLAY_IN_PAGE="Y"
+			   DISPLAY_IN_SITE_MAP="N"
+			   INACTIVE="N"
+			   MENU_TEXT_-_STRING_REFERENCE="SBL_&amp;MY_LITERATURE-1009090030-1LR"
+			   NAME="FINS Sales Tool List View - My"
+			   PARENT_CATEGORY="Sales Tool List"
+			   SEQUENCE="1001002000"
+			   TYPE="Aggregate View"
+			   VIEW="FINS Sales Tool List View - My"
+			   VIEWBAR_TEXT_-_STRING_REFERENCE="SBL_MY_LITERATURE-1009091017-92A"
+			   UPDATED="08/05/2010 19:05:19"
+			   UPDATED_BY="SADMIN"
+			   CREATED="06/03/2003 18:39:30"
+			   CREATED_BY="SADMIN">
+			</SCREEN_VIEW>
+			<SCREEN_VIEW
+			   6_SECTORS="Y"
+			   8_SECTORS="Y"
+			   DISPLAY_IN_PAGE="Y"
+			   DISPLAY_IN_SITE_MAP="Y"
+			   INACTIVE="Y"
+			   NAME="FINS Sales Tool More Info View"
+			   TYPE="Detail View"
+			   VIEW="FINS Sales Tool More Info View"
+			   UPDATED="06/03/2003 20:14:52"
+			   UPDATED_BY="SADMIN"
+			   CREATED="06/03/2003 18:39:30"
+			   CREATED_BY="SADMIN">
+				<SCREEN_VIEW_LOCALE
+				   APPLICATION_CODE="STD"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   MENU_TEXT="More Info"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   VIEWBAR_TEXT="More Info"
+				   UPDATED="06/03/2003 20:14:52"
+				   UPDATED_BY="SADMIN"
+				   CREATED="06/03/2003 20:14:52"
+				   CREATED_BY="SADMIN">
+				</SCREEN_VIEW_LOCALE>
+			</SCREEN_VIEW>
+			<SCREEN_VIEW
+			   6_SECTORS="Y"
+			   8_SECTORS="Y"
+			   COMMENTS="Added for the Search Preview feature related to defect 12-5LL0LM"
+			   DISPLAY_IN_PAGE="N"
+			   DISPLAY_IN_SITE_MAP="N"
+			   INACTIVE="N"
+			   NAME="Literature Preview View"
+			   PARENT_CATEGORY="Sales Tool List"
+			   SEQUENCE="1001001000"
+			   TYPE="Detail View"
+			   VIEW="Literature Preview View"
+			   UPDATED="08/05/2010 19:05:13"
+			   UPDATED_BY="SADMIN"
+			   CREATED="06/27/2001 20:07:35"
+			   CREATED_BY="SADMIN">
+				<SCREEN_VIEW_LOCALE
+				   APPLICATION_CODE="STD"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="06/27/2001 22:52:29"
+				   UPDATED_BY="SADMIN"
+				   CREATED="06/27/2001 20:08:19"
+				   CREATED_BY="SADMIN">
+				</SCREEN_VIEW_LOCALE>
+			</SCREEN_VIEW>
+			<SCREEN_VIEW
+			   6_SECTORS="Y"
+			   8_SECTORS="Y"
+			   CATEGORY_DEFAULT_VIEW="Sales Tools List"
+			   CATEGORY_NAME="Sales Tool List"
+			   DISPLAY_IN_PAGE="Y"
+			   DISPLAY_IN_SITE_MAP="Y"
+			   INACTIVE="N"
+			   MENU_TEXT_-_STRING_REFERENCE="SBL_LIST-1009090938-8PN"
+			   NAME="Sales Tool List"
+			   SEQUENCE="1001000000"
+			   TYPE="Aggregate Category"
+			   VIEWBAR_TEXT_-_STRING_REFERENCE="SBL_LIST-1009090938-8PN"
+			   UPDATED="08/20/2004 20:00:37"
+			   UPDATED_BY="SADMIN"
+			   CREATED="09/11/2003 20:25:49"
+			   CREATED_BY="SADMIN">
+			</SCREEN_VIEW>
+			<SCREEN_VIEW
+			   6_SECTORS="Y"
+			   8_SECTORS="Y"
+			   DISPLAY_IN_PAGE="Y"
+			   DISPLAY_IN_SITE_MAP="Y"
+			   INACTIVE="N"
+			   MENU_TEXT_-_STRING_REFERENCE="SBL_ALL_&amp;LITERATURE-1004224554-15N"
+			   NAME="Sales Tools List"
+			   PARENT_CATEGORY="Sales Tool List"
+			   SEQUENCE="1001005000"
+			   STATUS_TEXT_-_STRING_REFERENCE="SBL_VIEW_ALL_LITERATURE-1004224357-08S"
+			   TYPE="Aggregate View"
+			   VIEW="Sales Tools List"
+			   VIEWBAR_TEXT_-_STRING_REFERENCE="SBL_ALL_LITERATURE-1004224854-3O7"
+			   UPDATED="08/05/2010 19:05:13"
+			   UPDATED_BY="SADMIN"
+			   CREATED="01/01/1980 01:00:00"
+			   CREATED_BY="SADMIN">
+			</SCREEN_VIEW>
+			<SCREEN_VIEW
+			   6_SECTORS="Y"
+			   8_SECTORS="Y"
+			   DISPLAY_IN_PAGE="Y"
+			   DISPLAY_IN_SITE_MAP="N"
+			   INACTIVE="Y"
+			   NAME="Sales Tools List Detail View"
+			   PARENT_CATEGORY="Sales Tool List"
+			   SEQUENCE="4"
+			   TYPE="Detail View"
+			   VIEW="Sales Tools List Detail View"
+			   UPDATED="09/11/2003 20:25:49"
+			   UPDATED_BY="SADMIN"
+			   CREATED="12/11/2000 21:19:16"
+			   CREATED_BY="SADMIN">
+				<SCREEN_VIEW_LOCALE
+				   APPLICATION_CODE="STD"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   MENU_TEXT="More Info"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   VIEWBAR_TEXT="More Info"
+				   UPDATED="06/03/2003 20:14:53"
+				   UPDATED_BY="SADMIN"
+				   CREATED="12/11/2000 21:19:16"
+				   CREATED_BY="SADMIN">
+				</SCREEN_VIEW_LOCALE>
+			</SCREEN_VIEW>
+			<SCREEN_VIEW
+			   6_SECTORS="Y"
+			   8_SECTORS="Y"
+			   COMMENTS="New UI Framework for 7.7 Original Parent Category &lt;Sales Tool List&gt;, Original Display In Site Map &lt;N&gt;,"
+			   DISPLAY_IN_PAGE="Y"
+			   DISPLAY_IN_SITE_MAP="Y"
+			   INACTIVE="N"
+			   MENU_TEXT_-_STRING_REFERENCE="SBL_EXPLORER-1004224637-1RF"
+			   NAME="Sales Tools List by Product"
+			   SEQUENCE="1002000000"
+			   STATUS_TEXT_-_STRING_REFERENCE="SBL_VIEW_PRODUCT_LITERATURE-1004224409-0DU"
+			   TYPE="Aggregate View"
+			   VIEW="Sales Tools List by Product"
+			   VIEWBAR_TEXT_-_STRING_REFERENCE="SBL_EXPLORER-1004224637-1RF"
+			   UPDATED="07/17/2004 23:36:53"
+			   UPDATED_BY="SADMIN"
+			   CREATED="01/01/1980 01:00:00"
+			   CREATED_BY="SADMIN">
+			</SCREEN_VIEW>
+			<SCREEN_VIEW
+			   6_SECTORS="Y"
+			   8_SECTORS="Y"
+			   DISPLAY_IN_PAGE="Y"
+			   DISPLAY_IN_SITE_MAP="Y"
+			   INACTIVE="Y"
+			   NAME="Sales Tools across Catalogs"
+			   PARENT_CATEGORY="Sales Tool List"
+			   SEQUENCE="8"
+			   TYPE="Aggregate View"
+			   VIEW="Sales Tools across Catalogs"
+			   UPDATED="09/11/2003 20:25:49"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/13/2001 21:36:13"
+			   CREATED_BY="SADMIN">
+				<SCREEN_VIEW_LOCALE
+				   APPLICATION_CODE="STD"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   MENU_TEXT="Literature across &amp;Catalogs"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   VIEWBAR_TEXT="Literature Across Catalogs"
+				   UPDATED="03/29/2001 09:12:57"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/13/2001 21:36:39"
+				   CREATED_BY="SADMIN">
+				</SCREEN_VIEW_LOCALE>
+			</SCREEN_VIEW>
+		</SCREEN>
+	</PROJECT>
+</REPOSITORY>
+
+
+

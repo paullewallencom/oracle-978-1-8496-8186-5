@@ -1,0 +1,12 @@
+AHA Customer Profile Form Applet (Applet User Prop):
+
+Name:	CanInvokeMethod: AHANewOrder
+Value: 	[Type] = LookupValue("ACCOUNT_TYPE", "Business")
+
+
+
+Account (Business Component User Prop):
+
+Name:	Named Method 35
+Value:	"AHANewOrder", "INVOKESVC", "Account", "Workflow Process Manager", "RunProcess", "'ProcessName'", "'Account - New Order'",  "'RowId'", "[Id]"
+

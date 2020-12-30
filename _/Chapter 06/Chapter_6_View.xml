@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><?Siebel-Property-Set EscapeNames="true"?><SiebelMessage
+><__und_undPROPERTIES_und_und
+><TargetServerPath
+></TargetServerPath
+><SourceServiceMethod
+></SourceServiceMethod
+><SchemaVersion
+>45.19.0.22</SchemaVersion
+><SRFVersion
+>43|1224322639|1284132170</SRFVersion
+><SessionId
+>8SIA-7YU5T</SessionId
+><AcknowledgementWorkflow
+>UDA Acknowledgement</AcknowledgementWorkflow
+><PostProcessWorkflow
+>Testing</PostProcessWorkflow
+><Asynchronous
+>Y</Asynchronous
+><TransactionLogFileName
+>8SIA-7YU5T</TransactionLogFileName
+><TransactionName
+>View</TransactionName
+><AsyncExportFile
+>N</AsyncExportFile
+><UserName
+></UserName
+><Password
+></Password
+><TargetServiceName
+></TargetServiceName
+><AsyncDataPrep
+>Y</AsyncDataPrep
+><TargetWorkflow
+>UDA Target Workflow</TargetWorkflow
+><EAIQueueType
+>On Error</EAIQueueType
+><TargetServiceMethod
+></TargetServiceMethod
+><SourceServiceName
+></SourceServiceName
+><TargetSubsystem
+>UDADeploy</TargetSubsystem
+><Description
+></Description
+><SessionProjectName
+>AHA View</SessionProjectName
+><ExportFilePath
+>C:\TEMP</ExportFilePath
+><TransactionLogFilePath
+>C:\SIA81\CLIENT\temp\8SIA-7YU5T.log</TransactionLogFilePath
+><TransactionId
+>8SIA-7YU5U</TransactionId
+></__und_undPROPERTIES_und_und
+><EAIMessage
+><__und_undPROPERTIES_und_und
+><SessionItemName
+>View</SessionItemName
+><SessionName
+>EMT Session</SessionName
+><DataTypeName
+>View</DataTypeName
+><MessageId
+></MessageId
+><GroupName
+>View</GroupName
+><MessageType
+>Integration Object</MessageType
+><IntObjectName
+>UDA View Access</IntObjectName
+><IntObjectFormat
+>Siebel Hierarchical</IntObjectFormat
+><EAIMethod
+>Synchronize</EAIMethod
+></__und_undPROPERTIES_und_und
+><ListOfUDA_spcView_spcAccess
+><Feature_spcAccess
+><__und_undPROPERTIES_und_und
+><Auto_spcSmart_spcScript_spcName
+></Auto_spcSmart_spcScript_spcName
+><Responsibility_spcView_spcLocal_spcAccess
+></Responsibility_spcView_spcLocal_spcAccess
+><Local_spcAccess
+>Y</Local_spcAccess
+><Name
+>AHA Customer Process Start View</Name
+><Description
+>AHA UI Prototype</Description
+></__und_undPROPERTIES_und_und
+></Feature_spcAccess
+></ListOfUDA_spcView_spcAccess
+></EAIMessage
+></SiebelMessage
+>

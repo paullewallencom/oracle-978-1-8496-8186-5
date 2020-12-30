@@ -1,0 +1,60 @@
+function getPersonInfo(Inputs, Outputs)
+{
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+The following is sample code for the scripting chapters of the Siebel CRM 8 Developer's Handbook
+by Alexander Hansal. You are not allowed to use this code or portions of it in production systems.
+The author does not take any liability for damage or data loss if you should use this code
+or portions of it.
+
+The getPersonInfo() function reads the ROW_ID of a person from the input PS. It then uses
+the ROW_ID to query the Person BC in the Contact BO to read selected field values and pass 
+them in the output PS.
+(c)2010 Alexander Hansal
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+	try
+	{
+		//variable initialization
+		var PersonId : String = Inputs.GetProperty("Person Id");
+		var FieldList : PropertySet = Inputs.GetChild(0);
+		var ContactBO : BusObject = TheApplication().GetBusObject("Contact");
+		var PersonBC : BusComp = ContactBO.GetBusComp("Person");
+		var PersonData : PropertySet = TheApplication().NewPropertySet();
+		var f : String;
+		with (PersonBC)
+		{
+			SetViewMode(AllView); //"all across organizations"
+			ActivateMultipleFields(FieldList); //uses child prop set
+			ClearToQuery();
+			SetSearchSpec("Id",PersonId);
+			ExecuteQuery(ForwardOnly);
+		}
+		if (PersonBC.FirstRecord()) //will fail when no record is found
+		{
+			f = FieldList.GetFirstProperty(); //read first field name
+			while (f != "") //GetNextProperty() returns "" after last property
+			{
+				PersonData.SetProperty(f,PersonBC.GetFieldValue(f)); //read field value
+				f = FieldList.GetNextProperty(); //get name of next field
+			}
+			PersonData.SetType("PersonData");
+			Outputs.AddChild(PersonData);
+		}
+		else //reached when no record is found
+		{
+			throw("No record found in Person BC with [Id]='" + PersonId + "'.");
+		}
+	}
+	catch(e)
+	{
+		TheApplication().RaiseErrorText(e.toString());
+	}
+	finally
+	{
+		f = null;
+		PersonData = null;
+		PersonBC = null;
+		ContactBO = null;
+		FieldList = null;
+		PersonId = null;
+	}
+}

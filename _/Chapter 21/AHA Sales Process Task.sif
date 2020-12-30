@@ -1,0 +1,1173 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<REPOSITORY
+   NAME="Siebel Repository"
+   UPDATED="10/17/2008 10:12:45"
+   UPDATED_BY="SADMIN"
+   CREATED="10/17/2008 09:26:09"
+   CREATED_BY="SADMIN"
+   FIO_PLACEHOLDER_FIO="TRUE">
+	<PROJECT
+	   ALLOW_OBJECT_LOCKING="Y"
+	   INACTIVE="N"
+	   LOCKED="N"
+	   NAME="AHA Task UI"
+	   UI_FREEZE="N"
+	   UPDATED="12/16/2010 19:31:42"
+	   UPDATED_BY="SADMIN"
+	   CREATED="10/22/2010 17:27:00"
+	   CREATED_BY="SADMIN"
+	   FIO_PLACEHOLDER_FIO="TRUE">
+		<TASK
+		   ALLOW_PAUSE="Y"
+		   BUSINESS_OBJECT="Account"
+		   INACTIVE="N"
+		   INBOX_DISPOSITION="DO_NOT_CARE_FASTEST"
+		   IS_SUBTASK="N"
+		   NAME="AHA Sales Process: 21"
+		   OBJECT_LOCKED="N"
+		   ON_CONFLICT="Cancel Operation"
+		   STATUS="COMPLETED"
+		   TASK_NAME="AHA Sales Process"
+		   TRANSACTIONAL="Y"
+		   VERSION="21"
+		   UPDATED="12/16/2010 19:31:42"
+		   UPDATED_BY="SADMIN"
+		   CREATED="10/28/2010 20:01:29"
+		   CREATED_BY="SADMIN">
+			<TASK_BRANCH
+			   FROM_STEP_NAME="Start"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*7*0*0*0*9*LineWidth1*24*FrHS1*22*P17*192 1234*NPts1*22*P07*140 1234*ToHS1*08*ArrowEnd1*1"
+			   NAME="Connector 0"
+			   TO_STEP_NAME="Query View"
+			   TYPE="CONNECTOR"
+			   UPDATED="10/28/2010 20:04:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:29"
+			   CREATED_BY="SADMIN">
+			</TASK_BRANCH>
+			<TASK_BRANCH
+			   FROM_STEP_NAME="Query View"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*7*0*0*0*9*LineWidth1*24*FrHS1*32*P17*238 2044*NPts1*22*P07*238 1504*ToHS1*18*ArrowEnd1*1"
+			   NAME="Connector 1"
+			   TO_STEP_NAME="Set Search Strings"
+			   TYPE="CONNECTOR"
+			   UPDATED="10/28/2010 20:04:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:29"
+			   CREATED_BY="SADMIN">
+			</TASK_BRANCH>
+			<TASK_BRANCH
+			   FROM_STEP_NAME="Task View 0"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*9*0*0*0*9*LineWidth1*22*P27*427 4114*FrHS1*22*P17*427 3514*NPts1*42*P07*402 3512*P37*456 4114*ToHS1*08*ArrowEnd1*1"
+			   NAME="Connector 10"
+			   TO_STEP_NAME="Create Order"
+			   TYPE="CONNECTOR"
+			   UPDATED="10/28/2010 20:04:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:29"
+			   CREATED_BY="SADMIN">
+			</TASK_BRANCH>
+			<TASK_BRANCH
+			   FROM_STEP_NAME="Create Quote?"
+			   INACTIVE="N"
+			   LABEL="No"
+			   LAYOUT="@0*0*12*0*0*0*6*TxtPos1*19*LineWidth1*22*P27*574 3244*FrHS1*22*P17*574 2194*NPts1*52*P07*560 2197*TxtPerc2*302*P37*495 3244*ToHS1*12*P47*495 3848*ArrowEnd1*1"
+			   NAME="Connector 11"
+			   TO_STEP_NAME="Create Order"
+			   TYPE="DEFAULT"
+			   UPDATED="10/28/2010 20:04:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:29"
+			   CREATED_BY="SADMIN">
+			</TASK_BRANCH>
+			<TASK_BRANCH
+			   FROM_STEP_NAME="Create Order"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*7*0*0*0*9*LineWidth1*24*FrHS1*22*P17*588 4114*NPts1*22*P07*534 4114*ToHS1*08*ArrowEnd1*1"
+			   NAME="Connector 12"
+			   TO_STEP_NAME="Task View 1"
+			   TYPE="CONNECTOR"
+			   UPDATED="10/28/2010 20:04:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:29"
+			   CREATED_BY="SADMIN">
+			</TASK_BRANCH>
+			<TASK_BRANCH
+			   EXPRESSION="(Siebel Operation Object Id All Must Match (Ignore Case)(&apos;*&apos;))"
+			   FROM_STEP_NAME="Query Results"
+			   INACTIVE="N"
+			   LABEL="&gt; 1"
+			   LAYOUT="@0*0*10*0*0*0*6*TxtPos1*09*LineWidth1*22*P26*390 394*FrHS1*12*P16*461 394*NPts1*32*P06*461 967*TxtPerc2*754*ToHS1*28*ArrowEnd1*1"
+			   NAME="Connector 13"
+			   TO_STEP_NAME="Set Message"
+			   TYPE="DECISION"
+			   UPDATED="10/28/2010 20:04:50"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:29"
+			   CREATED_BY="SADMIN">
+				<TASK_BRANCH_CRITERIA
+				   COMPARE_TO="TASK_PROPERTY"
+				   INACTIVE="N"
+				   NAME="Criteria_1"
+				   OPERATION="EQ_ALL_NC"
+				   PREFERRED_SEQUENCE="1"
+				   PROPERTY_NAME="Siebel Operation Object Id"
+				   UPDATED="10/28/2010 20:01:29"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/28/2010 20:01:29"
+				   CREATED_BY="SADMIN">
+					<TASK_BRANCH_CRITERIA_VALUE
+					   INACTIVE="N"
+					   LO_CHAR1="*"
+					   NAME="Criteria Value_1"
+					   PREFERRED_SEQUENCE="1"
+					   UPDATED="10/28/2010 20:01:29"
+					   UPDATED_BY="SADMIN"
+					   CREATED="10/28/2010 20:01:29"
+					   CREATED_BY="SADMIN">
+					</TASK_BRANCH_CRITERIA_VALUE>
+				</TASK_BRANCH_CRITERIA>
+			</TASK_BRANCH>
+			<TASK_BRANCH
+			   FROM_STEP_NAME="Task View 1"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*7*0*0*0*9*LineWidth1*24*FrHS1*22*P17*708 4114*NPts1*22*P07*666 4114*ToHS1*08*ArrowEnd1*1"
+			   NAME="Connector 14"
+			   TO_STEP_NAME="Create Activity"
+			   TYPE="CONNECTOR"
+			   UPDATED="10/28/2010 20:04:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:29"
+			   CREATED_BY="SADMIN">
+			</TASK_BRANCH>
+			<TASK_BRANCH
+			   FROM_STEP_NAME="Create Activity"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*7*0*0*0*9*LineWidth1*24*FrHS1*22*P17*840 4114*NPts1*22*P07*786 4114*ToHS1*08*ArrowEnd1*1"
+			   NAME="Connector 15"
+			   TO_STEP_NAME="End"
+			   TYPE="CONNECTOR"
+			   UPDATED="10/28/2010 20:04:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:29"
+			   CREATED_BY="SADMIN">
+			</TASK_BRANCH>
+			<TASK_BRANCH
+			   FROM_STEP_NAME="Query Accounts"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*7*0*0*0*9*LineWidth1*24*FrHS1*22*P17*422 1234*NPts1*22*P07*390 1234*ToHS1*08*ArrowEnd1*1"
+			   NAME="Connector 2"
+			   TO_STEP_NAME="Query Results"
+			   TYPE="CONNECTOR"
+			   UPDATED="10/28/2010 20:04:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:29"
+			   CREATED_BY="SADMIN">
+			</TASK_BRANCH>
+			<TASK_BRANCH
+			   FROM_STEP_NAME="Set Message"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*8*0*0*0*9*LineWidth1*22*P26*238 964*FrHS1*02*P16*238 394*NPts1*32*P06*312 394*ToHS1*18*ArrowEnd1*1"
+			   NAME="Connector 3"
+			   TO_STEP_NAME="Query View"
+			   TYPE="CONNECTOR"
+			   UPDATED="10/28/2010 20:04:50"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:04:34"
+			   CREATED_BY="SADMIN">
+			</TASK_BRANCH>
+			<TASK_BRANCH
+			   FROM_STEP_NAME="Set Search Strings"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*9*0*0*0*9*LineWidth1*22*P27*294 1234*FrHS1*22*P17*294 2314*NPts1*42*P07*277 2312*P37*312 1234*ToHS1*08*ArrowEnd1*1"
+			   NAME="Connector 4"
+			   TO_STEP_NAME="Query Accounts"
+			   TYPE="CONNECTOR"
+			   UPDATED="10/28/2010 20:04:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:29"
+			   CREATED_BY="SADMIN">
+			</TASK_BRANCH>
+			<TASK_BRANCH
+			   EXPRESSION="(Siebel Operation Object Id Is Null)"
+			   FROM_STEP_NAME="Query Results"
+			   INACTIVE="N"
+			   LABEL="0"
+			   LAYOUT="@0*0*7*0*0*0*9*LineWidth1*24*FrHS1*22*P17*530 1234*NPts1*22*P07*500 1234*ToHS1*08*ArrowEnd1*1"
+			   NAME="Connector 5"
+			   TO_STEP_NAME="Create Partner"
+			   TYPE="DECISION"
+			   UPDATED="10/28/2010 20:04:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:29"
+			   CREATED_BY="SADMIN">
+				<TASK_BRANCH_CRITERIA
+				   COMPARE_TO="TASK_PROPERTY"
+				   INACTIVE="N"
+				   NAME="Criteria_2"
+				   OPERATION="IS_NULL"
+				   PREFERRED_SEQUENCE="2"
+				   PROPERTY_NAME="Siebel Operation Object Id"
+				   UPDATED="10/28/2010 20:01:29"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/28/2010 20:01:29"
+				   CREATED_BY="SADMIN">
+				</TASK_BRANCH_CRITERIA>
+			</TASK_BRANCH>
+			<TASK_BRANCH
+			   FROM_STEP_NAME="Create Partner"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*7*0*0*0*9*LineWidth1*24*FrHS1*22*P17*650 1234*NPts1*22*P07*608 1234*ToHS1*08*ArrowEnd1*1"
+			   NAME="Connector 6"
+			   TO_STEP_NAME="New Account View"
+			   TYPE="CONNECTOR"
+			   UPDATED="10/28/2010 20:04:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:29"
+			   CREATED_BY="SADMIN">
+			</TASK_BRANCH>
+			<TASK_BRANCH
+			   FROM_STEP_NAME="New Account View"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*10*0*0*0*9*LineWidth1*22*P27*753 1714*FrHS1*22*P17*753 1234*NPts1*52*P07*728 1232*P37*521 1714*ToHS1*12*P47*521 1928*ArrowEnd1*1"
+			   NAME="Connector 7"
+			   TO_STEP_NAME="Create Quote?"
+			   TYPE="CONNECTOR"
+			   UPDATED="10/28/2010 20:04:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:29"
+			   CREATED_BY="SADMIN">
+			</TASK_BRANCH>
+			<TASK_BRANCH
+			   EXPRESSION="(Account..AHA Always Generate Quote Flag All Must Match (Ignore Case)(&apos;Y&apos;))"
+			   FROM_STEP_NAME="Create Quote?"
+			   INACTIVE="N"
+			   LABEL="Yes"
+			   LAYOUT="@0*0*11*0*0*0*6*TxtPos1*19*LineWidth1*22*P27*231 2834*FrHS1*32*P17*521 2834*NPts1*42*P07*521 2467*TxtPerc2*152*P37*231 3244*ToHS1*18*ArrowEnd1*1"
+			   NAME="Connector 8"
+			   TO_STEP_NAME="Create Quote"
+			   TYPE="DECISION"
+			   UPDATED="10/28/2010 20:04:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:29"
+			   CREATED_BY="SADMIN">
+				<TASK_BRANCH_CRITERIA
+				   BUSINESS_COMPONENT="Account"
+				   BUSINESS_COMPONENT_FIELD="AHA Always Generate Quote Flag"
+				   COMPARE_TO="BUSCOMP"
+				   INACTIVE="N"
+				   NAME="Criteria_1"
+				   OPERATION="EQ_ALL_NC"
+				   PREFERRED_SEQUENCE="1"
+				   PROPERTY_NAME="AHA Create Quote Flag"
+				   UPDATED="10/28/2010 20:01:29"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/28/2010 20:01:29"
+				   CREATED_BY="SADMIN">
+					<TASK_BRANCH_CRITERIA_VALUE
+					   INACTIVE="N"
+					   LO_CHAR1="Y"
+					   NAME="Criteria Value_1"
+					   PREFERRED_SEQUENCE="1"
+					   UPDATED="10/28/2010 20:01:29"
+					   UPDATED_BY="SADMIN"
+					   CREATED="10/28/2010 20:01:29"
+					   CREATED_BY="SADMIN">
+					</TASK_BRANCH_CRITERIA_VALUE>
+				</TASK_BRANCH_CRITERIA>
+			</TASK_BRANCH>
+			<TASK_BRANCH
+			   FROM_STEP_NAME="Create Quote"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*7*0*0*0*9*LineWidth1*24*FrHS1*22*P17*324 3514*NPts1*22*P07*270 3514*ToHS1*08*ArrowEnd1*1"
+			   NAME="Connector 9"
+			   TO_STEP_NAME="Task View 0"
+			   TYPE="CONNECTOR"
+			   UPDATED="10/28/2010 20:04:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:29"
+			   CREATED_BY="SADMIN">
+			</TASK_BRANCH>
+			<TASK_BRANCH
+			   EXPRESSION="(Siebel Operation Object Id Is Not Null) AND ( All Must Match (Ignore Case)(&apos;[&amp;Siebel Operation Object Id] &lt;&gt; &apos;*&apos;&apos;))"
+			   FROM_STEP_NAME="Query Results"
+			   INACTIVE="N"
+			   LABEL="1"
+			   LAYOUT="@0*0*10*0*0*0*6*TxtPos1*09*LineWidth1*22*P27*482 2194*FrHS1*32*P17*461 2194*NPts1*32*P07*461 1507*TxtPerc2*254*ToHS1*08*ArrowEnd1*1"
+			   NAME="Default"
+			   TO_STEP_NAME="Create Quote?"
+			   TYPE="DECISION"
+			   UPDATED="10/28/2010 20:04:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:29"
+			   CREATED_BY="SADMIN">
+				<TASK_BRANCH_CRITERIA
+				   COMPARE_TO="TASK_PROPERTY"
+				   INACTIVE="N"
+				   NAME="Criteria_2"
+				   OPERATION="IS_NOT_NULL"
+				   PREFERRED_SEQUENCE="2"
+				   PROPERTY_NAME="Siebel Operation Object Id"
+				   UPDATED="10/28/2010 20:01:29"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/28/2010 20:01:29"
+				   CREATED_BY="SADMIN">
+				</TASK_BRANCH_CRITERIA>
+				<TASK_BRANCH_CRITERIA
+				   COMPARE_TO="EXPRESSION"
+				   INACTIVE="N"
+				   NAME="Criteria_3"
+				   OPERATION="EQ_ALL_NC"
+				   PREFERRED_SEQUENCE="3"
+				   UPDATED="10/28/2010 20:01:29"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/28/2010 20:01:29"
+				   CREATED_BY="SADMIN">
+					<TASK_BRANCH_CRITERIA_VALUE
+					   INACTIVE="N"
+					   LO_CHAR5="[&amp;Siebel Operation Object Id] &lt;&gt; &apos;*&apos;"
+					   NAME="Criteria Value_1"
+					   PREFERRED_SEQUENCE="1"
+					   UPDATED="10/28/2010 20:01:29"
+					   UPDATED_BY="SADMIN"
+					   CREATED="10/28/2010 20:01:29"
+					   CREATED_BY="SADMIN">
+					</TASK_BRANCH_CRITERIA_VALUE>
+				</TASK_BRANCH_CRITERIA>
+			</TASK_BRANCH>
+			<TASK_CHAPTER
+			   COLOR="65280"
+			   INACTIVE="N"
+			   NAME="Order"
+			   SEQUENCE="40"
+			   UPDATED="10/28/2010 20:01:29"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:29"
+			   CREATED_BY="SADMIN">
+				<TASK_CHAPTER_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="Create Order"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="10/28/2010 20:01:29"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/28/2010 20:01:29"
+				   CREATED_BY="SADMIN">
+				</TASK_CHAPTER_LOCALE>
+			</TASK_CHAPTER>
+			<TASK_CHAPTER
+			   COLOR="33023"
+			   INACTIVE="N"
+			   NAME="Partner"
+			   SEQUENCE="20"
+			   UPDATED="10/28/2010 20:01:29"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:29"
+			   CREATED_BY="SADMIN">
+				<TASK_CHAPTER_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="Create Partner"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="10/28/2010 20:01:29"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/28/2010 20:01:29"
+				   CREATED_BY="SADMIN">
+				</TASK_CHAPTER_LOCALE>
+			</TASK_CHAPTER>
+			<TASK_CHAPTER
+			   COLOR="255"
+			   INACTIVE="N"
+			   NAME="Query"
+			   SEQUENCE="10"
+			   UPDATED="10/28/2010 20:01:29"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:29"
+			   CREATED_BY="SADMIN">
+				<TASK_CHAPTER_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="Partner Lookup"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="10/28/2010 20:01:29"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/28/2010 20:01:29"
+				   CREATED_BY="SADMIN">
+				</TASK_CHAPTER_LOCALE>
+			</TASK_CHAPTER>
+			<TASK_CHAPTER
+			   COLOR="65535"
+			   INACTIVE="N"
+			   NAME="Quote"
+			   SEQUENCE="30"
+			   UPDATED="10/28/2010 20:01:29"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:29"
+			   CREATED_BY="SADMIN">
+				<TASK_CHAPTER_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="Create Quote"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="10/28/2010 20:01:29"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/28/2010 20:01:29"
+				   CREATED_BY="SADMIN">
+				</TASK_CHAPTER_LOCALE>
+			</TASK_CHAPTER>
+			<TASK_LOCALE
+			   APPLICATION_CODE="STD"
+			   DISPLAY_NAME="Sales Process"
+			   INACTIVE="N"
+			   LANGUAGE_CODE="ENU"
+			   NAME="ENU-STD"
+			   REDO="N"
+			   TRANSLATE="Y"
+			   UPDATED="10/28/2010 20:01:30"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:30"
+			   CREATED_BY="SADMIN">
+			</TASK_LOCALE>
+			<TASK_PROPERTY
+			   ACCESS_MODE="R/W"
+			   DATA_TYPE="VARCHAR"
+			   IN_OUT="NONE"
+			   INACTIVE="N"
+			   NAME="AHA CSN Search"
+			   UPDATED="10/28/2010 20:01:30"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:30"
+			   CREATED_BY="SADMIN">
+			</TASK_PROPERTY>
+			<TASK_PROPERTY
+			   ACCESS_MODE="R/W"
+			   DATA_TYPE="VARCHAR"
+			   IN_OUT="NONE"
+			   INACTIVE="N"
+			   NAME="AHA City Search"
+			   UPDATED="10/28/2010 20:01:30"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:30"
+			   CREATED_BY="SADMIN">
+			</TASK_PROPERTY>
+			<TASK_PROPERTY
+			   ACCESS_MODE="R/W"
+			   DATA_TYPE="VARCHAR"
+			   IN_OUT="NONE"
+			   INACTIVE="N"
+			   NAME="AHA Create Quote Flag"
+			   UPDATED="10/28/2010 20:01:30"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:30"
+			   CREATED_BY="SADMIN">
+			</TASK_PROPERTY>
+			<TASK_PROPERTY
+			   ACCESS_MODE="R/W"
+			   DATA_TYPE="VARCHAR"
+			   IN_OUT="NONE"
+			   INACTIVE="N"
+			   NAME="AHA Name Search"
+			   UPDATED="10/28/2010 20:01:30"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:30"
+			   CREATED_BY="SADMIN">
+			</TASK_PROPERTY>
+			<TASK_PROPERTY
+			   ACCESS_MODE="R/W"
+			   DATA_TYPE="VARCHAR"
+			   IN_OUT="NONE"
+			   INACTIVE="N"
+			   NAME="AHA Partner CSN"
+			   UPDATED="10/28/2010 20:01:30"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:30"
+			   CREATED_BY="SADMIN">
+			</TASK_PROPERTY>
+			<TASK_PROPERTY
+			   ACCESS_MODE="R/W"
+			   DATA_TYPE="VARCHAR"
+			   IN_OUT="NONE"
+			   INACTIVE="N"
+			   NAME="AHA Partner City"
+			   UPDATED="10/28/2010 20:01:30"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:30"
+			   CREATED_BY="SADMIN">
+			</TASK_PROPERTY>
+			<TASK_PROPERTY
+			   ACCESS_MODE="R/W"
+			   DATA_TYPE="VARCHAR"
+			   IN_OUT="NONE"
+			   INACTIVE="N"
+			   NAME="AHA Partner Name"
+			   UPDATED="10/28/2010 20:01:30"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:30"
+			   CREATED_BY="SADMIN">
+			</TASK_PROPERTY>
+			<TASK_PROPERTY
+			   ACCESS_MODE="R/W"
+			   DATA_TYPE="VARCHAR"
+			   DEFAULT="AND"
+			   IN_OUT="NONE"
+			   INACTIVE="N"
+			   NAME="AHA Query Operator"
+			   UPDATED="10/28/2010 20:01:30"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:30"
+			   CREATED_BY="SADMIN">
+			</TASK_PROPERTY>
+			<TASK_PROPERTY
+			   ACCESS_MODE="R/W"
+			   DATA_TYPE="VARCHAR"
+			   IN_OUT="NONE"
+			   INACTIVE="N"
+			   NAME="Context BC Id"
+			   UPDATED="10/28/2010 20:01:30"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:30"
+			   CREATED_BY="SADMIN">
+			</TASK_PROPERTY>
+			<TASK_PROPERTY
+			   ACCESS_MODE="R/W"
+			   DATA_TYPE="VARCHAR"
+			   IN_OUT="NONE"
+			   INACTIVE="N"
+			   NAME="Context BC Name"
+			   UPDATED="10/28/2010 20:01:30"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:30"
+			   CREATED_BY="SADMIN">
+			</TASK_PROPERTY>
+			<TASK_PROPERTY
+			   ACCESS_MODE="R/W"
+			   DATA_TYPE="VARCHAR"
+			   IN_OUT="NONE"
+			   INACTIVE="N"
+			   NAME="Context BO Name"
+			   UPDATED="10/28/2010 20:01:30"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:30"
+			   CREATED_BY="SADMIN">
+			</TASK_PROPERTY>
+			<TASK_PROPERTY
+			   ACCESS_MODE="R/W"
+			   DATA_TYPE="VARCHAR"
+			   IN_OUT="NONE"
+			   INACTIVE="N"
+			   NAME="Error Code"
+			   UPDATED="10/28/2010 20:01:30"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:30"
+			   CREATED_BY="SADMIN">
+			</TASK_PROPERTY>
+			<TASK_PROPERTY
+			   ACCESS_MODE="R/W"
+			   DATA_TYPE="VARCHAR"
+			   IN_OUT="NONE"
+			   INACTIVE="N"
+			   NAME="Error Message"
+			   UPDATED="10/28/2010 20:01:30"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:30"
+			   CREATED_BY="SADMIN">
+			</TASK_PROPERTY>
+			<TASK_PROPERTY
+			   ACCESS_MODE="R/W"
+			   DATA_TYPE="VARCHAR"
+			   IN_OUT="NONE"
+			   INACTIVE="N"
+			   NAME="Instance Identifier"
+			   UPDATED="10/28/2010 20:01:30"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:30"
+			   CREATED_BY="SADMIN">
+			</TASK_PROPERTY>
+			<TASK_PROPERTY
+			   ACCESS_MODE="R/W"
+			   DATA_TYPE="VARCHAR"
+			   IN_OUT="NONE"
+			   INACTIVE="N"
+			   NAME="Object Id"
+			   UPDATED="10/28/2010 20:01:30"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:30"
+			   CREATED_BY="SADMIN">
+			</TASK_PROPERTY>
+			<TASK_PROPERTY
+			   ACCESS_MODE="R/W"
+			   DATA_TYPE="VARCHAR"
+			   IN_OUT="NONE"
+			   INACTIVE="N"
+			   NAME="Siebel Operation Object Id"
+			   UPDATED="10/28/2010 20:01:30"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:30"
+			   CREATED_BY="SADMIN">
+			</TASK_PROPERTY>
+			<TASK_STEP
+			   BUSINESS_COMPONENT="Action"
+			   CHAPTER="Order"
+			   DEFER_WRITE_RECORD="N"
+			   DISABLE_CANCEL="N"
+			   DISABLE_PAUSE="N"
+			   DISABLE_PREVIOUS="N"
+			   DISPLAY_NAME_TYPE="Normal"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r15*708 384 786 4389*FillBgClr8*134218238*ArrowEnd1*1"
+			   NAME="Create Activity"
+			   OPERATION="INSERT"
+			   REPEATABLE="Y"
+			   RETAIN_APPLET_SEARCH_SPEC="N"
+			   RETAIN_TASK_SEARCH_SPEC="Y"
+			   RETAIN_USER_SEARCH_SPEC="N"
+			   TYPE="SIEBEL_OPER"
+			   UPDATED="10/28/2010 20:04:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:29"
+			   CREATED_BY="SADMIN">
+				<TASK_STEP_IO_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_OUTPUT="Input"
+				   NAME="Description"
+				   TYPE="Literal"
+				   VALUE="New customer documents created via Task UI."
+				   UPDATED="10/28/2010 20:01:29"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/28/2010 20:01:29"
+				   CREATED_BY="SADMIN">
+				</TASK_STEP_IO_ARGUMENT>
+				<TASK_STEP_IO_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_OUTPUT="Input"
+				   NAME="Type"
+				   TYPE="Literal"
+				   VALUE="Administration"
+				   UPDATED="10/28/2010 20:01:29"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/28/2010 20:01:29"
+				   CREATED_BY="SADMIN">
+				</TASK_STEP_IO_ARGUMENT>
+			</TASK_STEP>
+			<TASK_STEP
+			   BUSINESS_COMPONENT="Order Entry - Orders"
+			   CHAPTER="Order"
+			   DEFER_WRITE_RECORD="Y"
+			   DISABLE_CANCEL="N"
+			   DISABLE_PAUSE="N"
+			   DISABLE_PREVIOUS="N"
+			   DISPLAY_NAME_TYPE="Normal"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r15*456 384 534 4389*FillBgClr8*134218238*ArrowEnd1*1"
+			   NAME="Create Order"
+			   OPERATION="INSERT"
+			   REPEATABLE="Y"
+			   RETAIN_APPLET_SEARCH_SPEC="N"
+			   RETAIN_TASK_SEARCH_SPEC="Y"
+			   RETAIN_USER_SEARCH_SPEC="N"
+			   TYPE="SIEBEL_OPER"
+			   UPDATED="10/28/2010 20:04:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:29"
+			   CREATED_BY="SADMIN">
+				<TASK_STEP_IO_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_OUTPUT="Input"
+				   NAME="Order Type"
+				   TYPE="Literal"
+				   VALUE="Sales Order"
+				   UPDATED="10/28/2010 20:01:29"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/28/2010 20:01:29"
+				   CREATED_BY="SADMIN">
+				</TASK_STEP_IO_ARGUMENT>
+			</TASK_STEP>
+			<TASK_STEP
+			   BUSINESS_COMPONENT="Account"
+			   CHAPTER="Partner"
+			   DEFER_WRITE_RECORD="Y"
+			   DISABLE_CANCEL="N"
+			   DISABLE_PAUSE="N"
+			   DISABLE_PREVIOUS="N"
+			   DISPLAY_NAME_TYPE="Normal"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r14*530 96 608 1509*FillBgClr8*134218238*ArrowEnd1*1"
+			   NAME="Create Partner"
+			   OPERATION="INSERT"
+			   REPEATABLE="Y"
+			   RETAIN_APPLET_SEARCH_SPEC="N"
+			   RETAIN_TASK_SEARCH_SPEC="Y"
+			   RETAIN_USER_SEARCH_SPEC="N"
+			   TYPE="SIEBEL_OPER"
+			   UPDATED="10/28/2010 20:04:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:29"
+			   CREATED_BY="SADMIN">
+				<TASK_STEP_IO_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_OUTPUT="Input"
+				   NAME="Partner Flag"
+				   TYPE="Literal"
+				   VALUE="Y"
+				   UPDATED="10/28/2010 20:01:29"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/28/2010 20:01:29"
+				   CREATED_BY="SADMIN">
+				</TASK_STEP_IO_ARGUMENT>
+				<TASK_STEP_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="Create Partner Account"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="10/28/2010 20:01:29"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/28/2010 20:01:29"
+				   CREATED_BY="SADMIN">
+				</TASK_STEP_LOCALE>
+			</TASK_STEP>
+			<TASK_STEP
+			   BUSINESS_COMPONENT="Quote"
+			   CHAPTER="Quote"
+			   DEFER_WRITE_RECORD="Y"
+			   DISABLE_CANCEL="N"
+			   DISABLE_PAUSE="N"
+			   DISABLE_PREVIOUS="N"
+			   DISPLAY_NAME_TYPE="Normal"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r15*192 324 270 3789*FillBgClr8*134218238*ArrowEnd1*1"
+			   NAME="Create Quote"
+			   OPERATION="INSERT"
+			   REPEATABLE="Y"
+			   RETAIN_APPLET_SEARCH_SPEC="N"
+			   RETAIN_TASK_SEARCH_SPEC="Y"
+			   RETAIN_USER_SEARCH_SPEC="N"
+			   TYPE="SIEBEL_OPER"
+			   UPDATED="10/28/2010 20:04:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:29"
+			   CREATED_BY="SADMIN">
+				<TASK_STEP_IO_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_OUTPUT="Input"
+				   NAME="Price List"
+				   TYPE="Literal"
+				   VALUE="Master Price List"
+				   UPDATED="10/28/2010 20:01:29"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/28/2010 20:01:29"
+				   CREATED_BY="SADMIN">
+				</TASK_STEP_IO_ARGUMENT>
+			</TASK_STEP>
+			<TASK_STEP
+			   CHAPTER="Quote"
+			   DEFER_WRITE_RECORD="N"
+			   DISABLE_CANCEL="N"
+			   DISABLE_PAUSE="N"
+			   DISABLE_PREVIOUS="N"
+			   DISPLAY_NAME_TYPE="Normal"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r15*482 192 560 2469*FillBgClr8*134348798*ArrowEnd1*1"
+			   NAME="Create Quote?"
+			   REPEATABLE="Y"
+			   RETAIN_APPLET_SEARCH_SPEC="N"
+			   RETAIN_TASK_SEARCH_SPEC="Y"
+			   RETAIN_USER_SEARCH_SPEC="N"
+			   TYPE="DECISION_POINT"
+			   UPDATED="10/28/2010 20:04:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:29"
+			   CREATED_BY="SADMIN">
+			</TASK_STEP>
+			<TASK_STEP
+			   CHAPTER="Order"
+			   DEFER_WRITE_RECORD="N"
+			   DISABLE_CANCEL="N"
+			   DISABLE_PAUSE="N"
+			   DISABLE_PREVIOUS="N"
+			   DISPLAY_NAME_TYPE="Normal"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r15*840 384 918 4389*FillBgClr8*167641088*ArrowEnd1*1"
+			   NAME="End"
+			   REPEATABLE="Y"
+			   RETAIN_APPLET_SEARCH_SPEC="N"
+			   RETAIN_TASK_SEARCH_SPEC="Y"
+			   RETAIN_USER_SEARCH_SPEC="N"
+			   TYPE="END"
+			   UPDATED="10/28/2010 20:04:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:30"
+			   CREATED_BY="SADMIN">
+			</TASK_STEP>
+			<TASK_STEP
+			   CHAPTER="Partner"
+			   DEFER_WRITE_RECORD="N"
+			   DISABLE_CANCEL="N"
+			   DISABLE_PAUSE="N"
+			   DISABLE_PREVIOUS="N"
+			   DISPLAY_NAME_TYPE="Normal"
+			   FORWARD_BUTTON_TYPE="Next"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r14*650 96 728 1509*FillBgClr8*107355238*ArrowEnd1*1"
+			   NAME="New Account View"
+			   REPEATABLE="Y"
+			   RETAIN_APPLET_SEARCH_SPEC="N"
+			   RETAIN_TASK_SEARCH_SPEC="Y"
+			   RETAIN_USER_SEARCH_SPEC="N"
+			   TASK_VIEW="AHA Create Account Task View"
+			   TYPE="TASK_VIEW"
+			   UPDATED="10/28/2010 20:04:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:30"
+			   CREATED_BY="SADMIN">
+				<TASK_STEP_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="Create Partner Account"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="10/28/2010 20:01:30"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/28/2010 20:01:30"
+				   CREATED_BY="SADMIN">
+				</TASK_STEP_LOCALE>
+			</TASK_STEP>
+			<TASK_STEP
+			   BUSINESS_COMPONENT="Account"
+			   CHAPTER="Query"
+			   DEFER_WRITE_RECORD="N"
+			   DISABLE_CANCEL="N"
+			   DISABLE_PAUSE="N"
+			   DISABLE_PREVIOUS="N"
+			   DISPLAY_NAME_TYPE="Normal"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r14*312 96 390 1509*FillBgClr8*134218238*ArrowEnd1*1"
+			   NAME="Query Accounts"
+			   OPERATION="QUERY"
+			   REPEATABLE="Y"
+			   RETAIN_APPLET_SEARCH_SPEC="N"
+			   RETAIN_TASK_SEARCH_SPEC="Y"
+			   RETAIN_USER_SEARCH_SPEC="N"
+			   TYPE="SIEBEL_OPER"
+			   UPDATED="10/28/2010 20:04:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:30"
+			   CREATED_BY="SADMIN">
+				<TASK_STEP_CONTEXT
+				   EXPRESSION_BUSINESS_COMPONENT="Account"
+				   FILTER_BUSINESS_COMPONENT="Account"
+				   INACTIVE="N"
+				   IS_USER_SEARCH_SPEC="N"
+				   NAME="Query"
+				   SEARCH_SPECIFICATION="[&amp;AHA Name Search] + [&amp;AHA CSN Search] + [&amp;AHA City Search]"
+				   TYPE="EXPRESSION"
+				   UPDATED="10/28/2010 20:01:30"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/28/2010 20:01:30"
+				   CREATED_BY="SADMIN">
+				</TASK_STEP_CONTEXT>
+			</TASK_STEP>
+			<TASK_STEP
+			   CHAPTER="Query"
+			   DEFER_WRITE_RECORD="N"
+			   DISABLE_CANCEL="N"
+			   DISABLE_PAUSE="N"
+			   DISABLE_PREVIOUS="N"
+			   DISPLAY_NAME_TYPE="Normal"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r14*422 96 500 1509*FillBgClr8*134348798*ArrowEnd1*1"
+			   NAME="Query Results"
+			   REPEATABLE="Y"
+			   RETAIN_APPLET_SEARCH_SPEC="N"
+			   RETAIN_TASK_SEARCH_SPEC="Y"
+			   RETAIN_USER_SEARCH_SPEC="N"
+			   TYPE="DECISION_POINT"
+			   UPDATED="10/28/2010 20:04:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:30"
+			   CREATED_BY="SADMIN">
+			</TASK_STEP>
+			<TASK_STEP
+			   CHAPTER="Query"
+			   DEFER_WRITE_RECORD="N"
+			   DISABLE_CANCEL="N"
+			   DISABLE_PAUSE="N"
+			   DISABLE_PREVIOUS="Y"
+			   DISPLAY_NAME_TYPE="Normal"
+			   FORWARD_BUTTON_TYPE="Next"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r14*192 96 270 1509*FillBgClr8*107355238*ArrowEnd1*1"
+			   NAME="Query View"
+			   REPEATABLE="Y"
+			   RETAIN_APPLET_SEARCH_SPEC="N"
+			   RETAIN_TASK_SEARCH_SPEC="Y"
+			   RETAIN_USER_SEARCH_SPEC="N"
+			   TASK_VIEW="AHA Partner Query Task View"
+			   TYPE="TASK_VIEW"
+			   UPDATED="10/28/2010 20:04:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:30"
+			   CREATED_BY="SADMIN">
+				<TASK_STEP_IO_ARGUMENT
+				   BUSINESS_COMPONENT="AHA Partner Query TBC"
+				   BUSINESS_COMPONENT_FIELD="Partner CSN"
+				   INACTIVE="N"
+				   INPUT_OUTPUT="Output"
+				   NAME="O:AHA Partner CSN"
+				   PROPERTY_NAME="AHA Partner CSN"
+				   TYPE="Business Component"
+				   UPDATED="10/28/2010 20:01:30"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/28/2010 20:01:30"
+				   CREATED_BY="SADMIN">
+				</TASK_STEP_IO_ARGUMENT>
+				<TASK_STEP_IO_ARGUMENT
+				   BUSINESS_COMPONENT="AHA Partner Query TBC"
+				   BUSINESS_COMPONENT_FIELD="Partner City"
+				   INACTIVE="N"
+				   INPUT_OUTPUT="Output"
+				   NAME="O:AHA Partner City"
+				   PROPERTY_NAME="AHA Partner City"
+				   TYPE="Business Component"
+				   UPDATED="10/28/2010 20:01:30"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/28/2010 20:01:30"
+				   CREATED_BY="SADMIN">
+				</TASK_STEP_IO_ARGUMENT>
+				<TASK_STEP_IO_ARGUMENT
+				   BUSINESS_COMPONENT="AHA Partner Query TBC"
+				   BUSINESS_COMPONENT_FIELD="Partner Name"
+				   INACTIVE="N"
+				   INPUT_OUTPUT="Output"
+				   NAME="O:AHA Partner Name"
+				   PROPERTY_NAME="AHA Partner Name"
+				   TYPE="Business Component"
+				   UPDATED="10/28/2010 20:01:30"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/28/2010 20:01:30"
+				   CREATED_BY="SADMIN">
+				</TASK_STEP_IO_ARGUMENT>
+				<TASK_STEP_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="Enter query criteria"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="10/28/2010 20:01:30"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/28/2010 20:01:30"
+				   CREATED_BY="SADMIN">
+				</TASK_STEP_LOCALE>
+			</TASK_STEP>
+			<TASK_STEP
+			   BUSINESS_SERVICE_METHOD="Set Profile Attribute"
+			   BUSINESS_SERVICE_NAME="SIS OM PMT Service"
+			   CHAPTER="Query"
+			   DEFER_WRITE_RECORD="N"
+			   DISABLE_CANCEL="N"
+			   DISABLE_PAUSE="N"
+			   DISABLE_PREVIOUS="N"
+			   DISPLAY_NAME_TYPE="Normal"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r13*312 12 390 669*FillBgClr8*134217218*ArrowEnd1*1"
+			   NAME="Set Message"
+			   REPEATABLE="Y"
+			   RETAIN_APPLET_SEARCH_SPEC="N"
+			   RETAIN_TASK_SEARCH_SPEC="Y"
+			   RETAIN_USER_SEARCH_SPEC="N"
+			   TYPE="TASK"
+			   UPDATED="10/28/2010 20:08:23"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:04:14"
+			   CREATED_BY="SADMIN">
+				<TASK_STEP_IO_ARGUMENT
+				   ARGUMENT="Profile Attribute Name"
+				   INACTIVE="N"
+				   INPUT_OUTPUT="Input"
+				   NAME="I:Profile Attribute Name"
+				   TYPE="Literal"
+				   VALUE="AHA_TASK_MESSAGE"
+				   UPDATED="10/28/2010 20:06:17"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/28/2010 20:06:17"
+				   CREATED_BY="SADMIN">
+				</TASK_STEP_IO_ARGUMENT>
+				<TASK_STEP_IO_ARGUMENT
+				   ARGUMENT="Profile Attribute Value"
+				   INACTIVE="N"
+				   INPUT_OUTPUT="Input"
+				   NAME="I:Profile Attribute Value"
+				   TYPE="Literal"
+				   VALUE="&lt;font color=&quot;red&quot;&gt;More than one partner accounts match the query criteria.&lt;br&gt;Please refine your query.&lt;/font&gt;"
+				   UPDATED="10/28/2010 20:07:04"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/28/2010 20:07:04"
+				   CREATED_BY="SADMIN">
+				</TASK_STEP_IO_ARGUMENT>
+			</TASK_STEP>
+			<TASK_STEP
+			   BUSINESS_SERVICE_METHOD="Echo"
+			   BUSINESS_SERVICE_NAME="Workflow Utilities"
+			   CHAPTER="Query"
+			   DEFER_WRITE_RECORD="N"
+			   DISABLE_CANCEL="N"
+			   DISABLE_PAUSE="N"
+			   DISABLE_PREVIOUS="N"
+			   DISPLAY_NAME_TYPE="Normal"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r15*199 204 277 2589*FillBgClr8*134217218*ArrowEnd1*1"
+			   NAME="Set Search Strings"
+			   REPEATABLE="Y"
+			   RETAIN_APPLET_SEARCH_SPEC="N"
+			   RETAIN_TASK_SEARCH_SPEC="Y"
+			   RETAIN_USER_SEARCH_SPEC="N"
+			   TYPE="TASK"
+			   UPDATED="10/28/2010 20:04:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:30"
+			   CREATED_BY="SADMIN">
+				<TASK_STEP_IO_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_OUTPUT="Output"
+				   NAME="O:AHA CSN Search"
+				   PROPERTY_NAME="AHA CSN Search"
+				   TYPE="Expression"
+				   VALUE="IIf ([&amp;AHA Partner CSN] IS NULL,&quot;&quot;,&quot; &quot; + [&amp;AHA Query Operator] + &quot; [CSN] ~LIKE &apos;&quot; + [&amp;AHA Partner CSN] + &quot;&apos;&quot;)"
+				   UPDATED="10/28/2010 20:01:30"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/28/2010 20:01:30"
+				   CREATED_BY="SADMIN">
+				</TASK_STEP_IO_ARGUMENT>
+				<TASK_STEP_IO_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_OUTPUT="Output"
+				   NAME="O:AHA City Search"
+				   PROPERTY_NAME="AHA City Search"
+				   TYPE="Expression"
+				   VALUE="IIf ([&amp;AHA Partner City] IS NULL,&quot;&quot;,&quot; &quot; + [&amp;AHA Query Operator] + &quot; EXISTS([City] ~LIKE &apos;&quot; + [&amp;AHA Partner City] + &quot;&apos;)&quot;)"
+				   UPDATED="10/28/2010 20:01:30"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/28/2010 20:01:30"
+				   CREATED_BY="SADMIN">
+				</TASK_STEP_IO_ARGUMENT>
+				<TASK_STEP_IO_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_OUTPUT="Output"
+				   NAME="O:AHA Name Search"
+				   PROPERTY_NAME="AHA Name Search"
+				   TYPE="Expression"
+				   VALUE="IIf ([&amp;AHA Partner Name] IS NULL,&quot;[Name] LIKE &apos;*&apos;&quot;,&quot;[Name] ~LIKE &apos;&quot; + [&amp;AHA Partner Name] + &quot;&apos;&quot;)"
+				   UPDATED="10/28/2010 20:01:30"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/28/2010 20:01:30"
+				   CREATED_BY="SADMIN">
+				</TASK_STEP_IO_ARGUMENT>
+			</TASK_STEP>
+			<TASK_STEP
+			   CHAPTER="Query"
+			   DEFER_WRITE_RECORD="N"
+			   DISABLE_CANCEL="N"
+			   DISABLE_PAUSE="N"
+			   DISABLE_PREVIOUS="N"
+			   DISPLAY_NAME_TYPE="Normal"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r13*72 96 150 1509*FillBgClr8*167641088*ArrowEnd1*1"
+			   NAME="Start"
+			   REPEATABLE="Y"
+			   RETAIN_APPLET_SEARCH_SPEC="N"
+			   RETAIN_TASK_SEARCH_SPEC="Y"
+			   RETAIN_USER_SEARCH_SPEC="N"
+			   TYPE="START"
+			   UPDATED="10/28/2010 20:04:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:30"
+			   CREATED_BY="SADMIN">
+			</TASK_STEP>
+			<TASK_STEP
+			   CHAPTER="Quote"
+			   DEFER_WRITE_RECORD="N"
+			   DISABLE_CANCEL="N"
+			   DISABLE_PAUSE="N"
+			   DISABLE_PREVIOUS="N"
+			   DISPLAY_NAME_TYPE="Normal"
+			   FORWARD_BUTTON_TYPE="Next"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r15*324 324 402 3789*FillBgClr8*107355238*ArrowEnd1*1"
+			   NAME="Task View 0"
+			   REPEATABLE="Y"
+			   RETAIN_APPLET_SEARCH_SPEC="N"
+			   RETAIN_TASK_SEARCH_SPEC="Y"
+			   RETAIN_USER_SEARCH_SPEC="N"
+			   TASK_VIEW="AHA Create Quote Task View"
+			   TYPE="TASK_VIEW"
+			   UPDATED="10/28/2010 20:04:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:30"
+			   CREATED_BY="SADMIN">
+				<TASK_STEP_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="Create New Quote"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="10/28/2010 20:01:30"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/28/2010 20:01:30"
+				   CREATED_BY="SADMIN">
+				</TASK_STEP_LOCALE>
+			</TASK_STEP>
+			<TASK_STEP
+			   CHAPTER="Order"
+			   DEFER_WRITE_RECORD="N"
+			   DISABLE_CANCEL="N"
+			   DISABLE_PAUSE="N"
+			   DISABLE_PREVIOUS="N"
+			   DISPLAY_NAME_TYPE="Normal"
+			   FORWARD_BUTTON_TYPE="Submit"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r15*588 384 666 4389*FillBgClr8*107355238*ArrowEnd1*1"
+			   NAME="Task View 1"
+			   REPEATABLE="Y"
+			   RETAIN_APPLET_SEARCH_SPEC="N"
+			   RETAIN_TASK_SEARCH_SPEC="Y"
+			   RETAIN_USER_SEARCH_SPEC="N"
+			   TASK_VIEW="AHA Create Order Task View"
+			   TYPE="TASK_VIEW"
+			   UPDATED="10/28/2010 20:04:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/28/2010 20:01:30"
+			   CREATED_BY="SADMIN">
+				<TASK_STEP_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="Create New Order"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="10/28/2010 20:01:30"
+				   UPDATED_BY="SADMIN"
+				   CREATED="10/28/2010 20:01:30"
+				   CREATED_BY="SADMIN">
+				</TASK_STEP_LOCALE>
+			</TASK_STEP>
+		</TASK>
+	</PROJECT>
+</REPOSITORY>
+
+
+

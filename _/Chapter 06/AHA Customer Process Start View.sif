@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<REPOSITORY
+   NAME="Siebel Repository"
+   UPDATED="10/17/2008 10:12:45"
+   UPDATED_BY="SADMIN"
+   CREATED="10/17/2008 09:26:09"
+   CREATED_BY="SADMIN"
+   FIO_PLACEHOLDER_FIO="TRUE">
+	<PROJECT
+	   ALLOW_OBJECT_LOCKING="Y"
+	   INACTIVE="N"
+	   LANGUAGE_LOCKED="ENU"
+	   LOCKED="Y"
+	   LOCKED_DATE="06/01/2010 14:51:38"
+	   NAME="AHA User Interface"
+	   UI_FREEZE="N"
+	   LOCKED_BY_NAME="SADMIN"
+	   UPDATED="06/14/2010 18:55:00"
+	   UPDATED_BY="SADMIN"
+	   CREATED="06/01/2010 14:51:36"
+	   CREATED_BY="SADMIN"
+	   FIO_PLACEHOLDER_FIO="TRUE">
+		<VIEW
+		   ADD_TO_HISTORY="Y"
+		   ADMIN_MODE_FLAG="N"
+		   BUSINESS_OBJECT="Account"
+		   DISABLE_PDQ="N"
+		   EXPLICIT_LOGIN="N"
+		   INACTIVE="N"
+		   NAME="AHA Customer Process Start View"
+		   NO_BORDERS="N"
+		   OBJECT_LANGUAGE_LOCKED="ENU"
+		   OBJECT_LOCKED="Y"
+		   OBJECT_LOCKED_DATE="06/11/2010 15:33:25"
+		   SCREEN_MENU="Y"
+		   SECURE="N"
+		   THREAD_APPLET="AHA Customer Profile Form Applet"
+		   THREAD_FIELD="Name and Location"
+		   THREAD_TITLE_-_STRING_REFERENCE="SBL_CUSTOMER-1004230556-1TX"
+		   TYPE="Standard"
+		   UPGRADE_BEHAVIOR="Preserve"
+		   OBJECT_LOCKED_BY_NAME="SADMIN"
+		   UPDATED="06/13/2010 20:25:48"
+		   UPDATED_BY="SADMIN"
+		   CREATED="06/11/2010 15:33:25"
+		   CREATED_BY="SADMIN">
+			<VIEW_LOCALE
+			   APPLICATION_CODE="STD"
+			   INACTIVE="N"
+			   LANGUAGE_CODE="ENU"
+			   NAME="ENU-STD"
+			   TITLE="Customer Process Start"
+			   TRANSLATE="Y"
+			   UPDATED="06/11/2010 15:33:25"
+			   UPDATED_BY="SADMIN"
+			   CREATED="06/11/2010 15:33:25"
+			   CREATED_BY="SADMIN">
+			</VIEW_LOCALE>
+			<VIEW_WEB_TEMPLATE
+			   INACTIVE="N"
+			   NAME="Base"
+			   USER_LAYOUT="N"
+			   WEB_TEMPLATE="View Detail"
+			   UPDATED="06/13/2010 20:08:46"
+			   UPDATED_BY="SADMIN"
+			   CREATED="06/11/2010 15:33:25"
+			   CREATED_BY="SADMIN">
+				<VIEW_WEB_TEMPLATE_ITEM
+				   APPLET="AHA Customer Profile Form Applet"
+				   APPLET_MODE="Edit"
+				   INACTIVE="N"
+				   ITEM_IDENTIFIER="1"
+				   MARKUP_LANGUAGE="HTML"
+				   NAME="AHA Customer Profile Form Applet"
+				   UPDATED="06/11/2010 15:33:26"
+				   UPDATED_BY="SADMIN"
+				   CREATED="06/11/2010 15:33:26"
+				   CREATED_BY="SADMIN">
+				</VIEW_WEB_TEMPLATE_ITEM>
+				<VIEW_WEB_TEMPLATE_ITEM
+				   APPLET="Account Activity List Applet"
+				   APPLET_MODE="Edit List"
+				   INACTIVE="N"
+				   ITEM_IDENTIFIER="9"
+				   MARKUP_LANGUAGE="HTML"
+				   NAME="Account Activity List Applet"
+				   UPDATED="06/13/2010 20:08:32"
+				   UPDATED_BY="SADMIN"
+				   CREATED="06/13/2010 20:07:12"
+				   CREATED_BY="SADMIN">
+				</VIEW_WEB_TEMPLATE_ITEM>
+				<VIEW_WEB_TEMPLATE_ITEM
+				   APPLET="Account Category List Applet"
+				   APPLET_MODE="Edit List"
+				   INACTIVE="N"
+				   ITEM_IDENTIFIER="8"
+				   MARKUP_LANGUAGE="HTML"
+				   NAME="Account Category List Applet"
+				   UPDATED="06/13/2010 20:08:46"
+				   UPDATED_BY="SADMIN"
+				   CREATED="06/11/2010 15:33:26"
+				   CREATED_BY="SADMIN">
+				</VIEW_WEB_TEMPLATE_ITEM>
+				<VIEW_WEB_TEMPLATE_ITEM
+				   APPLET="Account Contact List Applet"
+				   APPLET_MODE="Base"
+				   INACTIVE="N"
+				   ITEM_IDENTIFIER="6"
+				   MARKUP_LANGUAGE="HTML"
+				   NAME="Account Contact List Applet"
+				   UPDATED="06/11/2010 15:46:25"
+				   UPDATED_BY="SADMIN"
+				   CREATED="06/11/2010 15:33:26"
+				   CREATED_BY="SADMIN">
+				</VIEW_WEB_TEMPLATE_ITEM>
+			</VIEW_WEB_TEMPLATE>
+		</VIEW>
+	</PROJECT>
+</REPOSITORY>
+
+
+
